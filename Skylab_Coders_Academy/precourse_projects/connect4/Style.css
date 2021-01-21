@@ -1,0 +1,1034 @@
+:root{
+
+    --elementBackground: rgba(255, 255, 255, 0.95);
+    
+    --marginColor: rgb(0, 0, 0);
+    --playerOne: rgb(255, 204, 0);
+    --playerTwo: rgb(166, 43, 43);
+    --buttonPlusHover: rgb(121, 180, 169);
+    --buttonPlusActive: rgb(228, 245, 242);
+    
+}
+
+@font-face {
+
+    font-family: 'font'; 
+    src: url('MontserratThin.ttf');
+    
+}
+
+#fpsBackground, #fpsTimer1, #fpsTimer2{
+
+    font-weight: 50;
+
+}
+
+/* SPECIFIC ATTRIBUTES CONTROL */
+
+.backgroundColorControlTransparent{
+
+    background-color: rgb(0, 0, 0, 0);
+
+}
+
+.backgroundColorControlSolid{
+
+    background-color: var(--elementBackground);
+
+}
+
+.backgroundHighlight{
+
+    background-color: white; 
+
+}
+
+.zIndexMinusTwo{
+
+    z-index: -2;
+
+}
+
+.zIndexZero{
+
+    z-index: 0;
+
+}
+
+.opacityMax{
+
+    opacity: 100%;
+
+}
+
+.opacityMin{
+
+    opacity: 0%;
+
+}
+
+.body{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(227, 255, 211);
+    margin: 0;
+
+    font-family: 'font';
+    font-size: 1vw;
+    font-weight: bold;
+
+}
+
+    .generalGrid{
+
+        display: grid;
+        
+        grid-template-columns: 0.5fr 25fr 0.5fr;
+        grid-template-rows: 0.5fr 10fr 0.5fr;
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+        .marginTop{
+
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+
+            background-color: var(--marginColor);
+
+        }
+
+        .marginBottom{
+
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+
+            background-color: var(--marginColor);
+
+            color: white;
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center
+
+            
+
+
+        }
+
+        .marginLeft{
+
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+
+            background-color: var(--marginColor);
+
+        }
+
+        .marginRight{
+
+            grid-column: 3 / 4;
+            grid-row: 1 / 4;
+            background-color: var(--marginColor);
+
+        } 
+
+        .canvasGridContainer{
+
+            grid-column: 1 / 4;
+            grid-row: 1 / 4;
+
+            display: flex;    
+        
+            z-index: -1;
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .gameGridContainer{
+
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            grid-template-rows: 2fr 10fr 1fr;
+
+            width: 100%;
+            height: 100%;
+            
+        }
+
+            .playerOneTextBoxGrid{
+
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+                .playerOneTextBox, .playerTwoTextBox {
+
+                    width: 97%;
+                    height: 97%;
+                    border-radius: 5px;
+                    border: 1px solid;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    transition: opacity 1s;
+
+                }
+
+                .firstPlayerNameLabel, .secondPlayerNameLabel, .firstPlayerNameClass, .secondPlayerNameClass{
+
+                    margin-top: 2%;
+
+                }
+        
+
+            .consoleGrid{
+
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+                .console{
+
+                    width: 97%;
+                    height: 97%;
+                    border-radius: 5px;
+                    border: 1px solid;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;  
+
+                    transition: opacity 1s, background-color 50ms;
+                        
+                }
+
+            .playerTwoTextBoxGrid{
+
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .gameMatrixGrid{
+
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .gameMatrixFlexGrid{
+
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+
+                
+                width: 97%;
+                height: 97%;
+                border-radius: 5px;
+                border: 2px solid;
+
+                transition:  background-color 500ms;
+
+            }
+
+                .arrowRow1col1Grid{
+
+                    grid-column: 1 /2;
+                    grid-row: 1/2;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                }
+
+                .arrowRow1col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .arrowRow1col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row:1/2 ;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .arrowRow1col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row: 1/2;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .arrowRow1col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 1/2;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .arrowRow1col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 1/2;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .arrowRow1col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 1/2;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col1Grid{
+
+                    grid-column: 1/2;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row2col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 2 / 3;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col1Grid{
+
+                    grid-column: 1/2;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row3col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 3 / 4;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col1Grid{
+
+                    grid-column: 1/2;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row4col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 4 / 5;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col1Grid{
+
+                    grid-column: 1/2;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row5col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 5 / 6;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col1Grid{
+
+                    grid-column: 1/2;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row6col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 6 / 7;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col1Grid{
+
+                    grid-column: 1/2;
+                    grid-row: 7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col2Grid{
+
+                    grid-column: 2/3;
+                    grid-row: 7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col3Grid{
+
+                    grid-column: 3/4;
+                    grid-row: 7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col4Grid{
+
+                    grid-column: 4/5;
+                    grid-row:7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col5Grid{
+
+                    grid-column: 5/6;
+                    grid-row: 7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col6Grid{
+
+                    grid-column: 6/7;
+                    grid-row: 7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+                .row7col7Grid{
+
+                    grid-column: 7/8;
+                    grid-row: 7 / 8;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
+
+                }
+
+
+            .circle{
+
+                border-radius: 50%;
+                color: black;
+                border: 5px solid;
+
+                width: 3vw;
+                height: 3vw;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                transition: background-color 250ms ;
+
+            }
+
+
+            .circlePlayerOne{
+                
+                background-color: var(--playerOne);
+
+            }
+
+            .circlePlayerTwo{
+                
+                background-color: var(--playerTwo);
+
+            }
+
+            .circleWiner{
+                
+                background-color: black;
+
+            }
+
+            .arrowIngamePlayer1{
+                
+                width: 5vh;
+                height: 5vh;
+
+                padding: 2%;
+                border-radius: 15px;
+
+                transition: width 100ms, height 100ms, background-color 100ms, opacity 100ms;
+
+            }
+
+            .arrowIngamePlayer2{
+                
+                width: 5vh;
+                height: 5vh;
+
+                padding: 2%;
+                border-radius: 15px;
+
+                transition: width 100ms, height 100ms, background-color 100ms, opacity 100ms;
+
+            }
+
+            .arrow{
+                
+                width: 50%;
+                height: 50%;
+
+                padding: 2%;
+                border-radius: 15px;
+
+                transition: width 100ms, height 100ms, background-color 100ms, opacity 100ms;
+                
+            }
+
+            .arrowIngamePlayer1:hover{
+
+                width: 60%;
+                height: 60%;
+
+                background-color: var(--playerOne);
+
+            }
+
+            .arrowIngamePlayer2:hover{
+
+                width: 60%;
+                height: 60%;
+
+                background-color: var(--playerTwo);
+
+            }
+
+            .arrowIngamePlayer1:active{
+
+                width: 60%;
+                height: 60%;
+
+                background-color: var(--buttonPlusActive);
+
+            }
+
+            .arrowIngamePlayer2:active{
+
+                width: 60%;
+                height: 60%;
+
+                background-color: var(--buttonPlusActive);
+
+            }
+
+            .flexboxGridTimerFirstPlayer{
+
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            } 
+            
+            
+            .flexboxGridTimerSecondPlayer{
+
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .gameControlsGrid{
+
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            .gameControls{
+
+                background-color: var(--elementBackground);
+                width: 97%;
+                height: 97%;
+                border-radius: 5px;
+                border: 1px solid;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                transition: opacity 3s;
+
+            }
+
+                .gameControlsButtons{
+
+                    border-radius: 25%;
+                    border: 0;
+
+                    width: 25%;
+                    height: 75%;
+
+                    background-color: var(--buttonPlusHover); 
+
+                    font-family: 'font';
+                    font-weight: bold;
+                    font-size: 1vw;
+
+                    transition: font-size 100ms, background-color 100ms, opacity 1s;
+                   
+
+                }
+
+                .gameControlsButtons:hover{
+
+                    font-size: 1.5vw;
+
+                }
+
+                .gameControlsButtons:active{
+
+                    font-size: 2vw;
+                    background-color: var(--buttonPlusActive);; 
+
+                }
+
+            .player1NameGrid{
+
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+
+                display: flex;
+                justify-content: center;
+                align-items: center
+
+            }
+
+
+            .player2NameGrid{
+
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+
+                display: flex;
+                justify-content: center;
+                align-items: center
+
+            }
+
+            .playerName{
+
+                background-color: var(--elementBackground);
+                width: 97%;
+                height: 97%;
+                border-radius: 5px;
+                border: 1px solid;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                transition: opacity 1s;
+
+            }     

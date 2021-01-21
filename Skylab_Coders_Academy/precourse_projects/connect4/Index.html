@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>  
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script> -->
+    
+</head>
+
+<body class="body">
+
+    <div class="generalGrid">
+
+        <div class="canvasGridContainer" id="canvasGridContainerId"></div>
+       
+        <div class="gameGridContainer" id="gameGridContainerId">
+
+            <div class="playerOneTextBoxGrid" id="playerOneTextBoxGridId">
+
+                <div class="playerOneTextBox backgroundColorControlSolid zIndexMinusTwo opacityMin" id="playerOneTextBoxId">
+
+                    <label for="firstPlayerNameid" class="firstPlayerNameLabel">First Player</label>
+                    <textarea class="firstPlayerNameClass" id="firstPlayerNameid" cols="25" rows="3" placeholder='Insert the first player´s name'></textarea>
+
+
+                </div>
+
+            </div>
+
+            <div class="consoleGrid" id="consoleGridId">
+
+                <div class="console backgroundColorControlSolid opacityMin" id="consoleId"></div>
+
+            </div>
+
+            <div class="playerTwoTextBoxGrid" id="playerTwoTextBoxGridId">
+
+                <div class="playerOneTextBox backgroundColorControlSolid zIndexMinusTwo opacityMin" id="playerTwoTextBoxId">
+
+                    <label for="secondPlayerNameid" class="secondPlayerNameLabel">Second Player</label>
+                    <textarea class="secondPlayerNameClass" id="secondPlayerNameid" cols="25" rows="3" placeholder='Insert the second player´s name or "CPU" to play against the machine'></textarea>
+
+                </div>
+                
+            </div>
+
+            <div class="flexboxGridTimerFirstPlayer" id="flexboxGridTimerFirstPlayerId"> </div>
+
+            <div class="gameMatrixGrid" id="gameMatrixId">
+
+                <div class="gameMatrixFlexGrid" id="gameMatrixFlexGridId">
+
+                    <div class="arrowRow1col1Grid" id="arrowRow1col1Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId11">
+
+                    </div>
+
+                    <div class="arrowRow1col2Grid" id="arrowRow1col2Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId12">
+
+                    </div>
+
+                    <div class="arrowRow1col3Grid" id="arrowRow1col3Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId13">
+
+                    </div>
+
+                    <div class="arrowRow1col4Grid" id="arrowRow1col4Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId14">
+
+                    </div>
+
+                    <div class="arrowRow1col5Grid" id="arrowRow1col5Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId15">
+
+                    </div>
+
+                    <div class="arrowRow1col6Grid" id="arrowRow1col6Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId16">
+
+                    </div>
+
+                    <div class="arrowRow1col7Grid" id="arrowRow1col7Id">
+
+                        <img src="arrow.png" alt="arrow"  class="arrow" id="arrowId17">
+
+                    </div>
+
+
+                    <div class="row2col1Grid" id="row2col1Id">
+
+                        <div class="circle" id="circleId21"></div>
+
+                    </div>
+
+                    <div class="row2col2Grid" id="row2col2Id">
+
+                        <div class="circle" id="circleId22"></div>
+
+                    </div>
+
+                    <div class="row2col3Grid" id="row2col3Id">
+
+                        <div class="circle" id="circleId23"></div>
+
+                    </div>
+
+                    <div class="row2col4Grid" id="row2col4Id">
+
+                        <div class="circle" id="circleId24"></div>
+
+                    </div>
+
+                    <div class="row2col5Grid" id="row2col5Id">
+
+                        <div class="circle" id="circleId25"></div>
+
+                    </div>
+
+                    <div class="row2col6Grid" id="row2col6Id">
+
+                        <div class="circle" id="circleId26"></div>
+
+                    </div>
+
+                    <div class="row2col7Grid" id="row2col7Id">
+
+                        <div class="circle" id="circleId27"></div>
+
+                    </div>
+
+
+                    <div class="row3col1Grid" id="row3col1Id">
+
+                        <div class="circle" id="circleId31"></div>
+
+                    </div>
+
+                    <div class="row3col2Grid" id="row3col2Id">
+
+                        <div class="circle" id="circleId32"></div>
+
+                    </div>
+
+                    <div class="row3col3Grid" id="row3col3Id">
+
+                        <div class="circle" id="circleId33"></div>
+
+                    </div>
+
+                    <div class="row3col4Grid" id="row3col4Id">
+
+                        <div class="circle" id="circleId34"></div>
+
+                    </div>
+
+                    <div class="row3col5Grid" id="row3col5Id">
+
+                        <div class="circle" id="circleId35"></div>
+
+                    </div>
+
+                    <div class="row3col6Grid" id="row3col6Id">
+
+                        <div class="circle" id="circleId36"></div>
+
+                    </div>
+
+                    <div class="row3col7Grid" id="row3col7Id">
+
+                        <div class="circle" id="circleId37"></div>
+
+                    </div>
+
+
+                    <div class="row4col1Grid" id="row4col1Id">
+
+                        <div class="circle" id="circleId41"></div>
+
+                    </div>
+
+                    <div class="row4col2Grid" id="row4col2Id">
+
+                        <div class="circle" id="circleId42"></div>
+
+                    </div>
+
+                    <div class="row4col3Grid" id="row4col3Id">
+
+                        <div class="circle" id="circleId43"></div>
+
+                    </div>
+
+                    <div class="row4col4Grid" id="row4col4Id">
+
+                        <div class="circle" id="circleId44"></div>
+
+                    </div>
+
+                    <div class="row4col5Grid" id="row4col5Id">
+
+                        <div class="circle" id="circleId45"></div>
+
+                    </div>
+
+                    <div class="row4col6Grid" id="row4col6Id">
+
+                        <div class="circle" id="circleId46"></div>
+
+                    </div>
+
+                    <div class="row4col7Grid" id="row4col7Id">
+
+                        <div class="circle" id="circleId47"></div>
+
+                    </div>
+
+
+                    <div class="row5col1Grid" id="row5col1Id">
+
+                        <div class="circle" id="circleId51"></div>
+
+                    </div>
+
+                    <div class="row5col2Grid" id="row5col2Id">
+
+                        <div class="circle" id="circleId52"></div>
+
+                    </div>
+
+                    <div class="row5col3Grid" id="row5col3Id">
+
+                        <div class="circle" id="circleId53"></div>
+
+                    </div>
+
+                    <div class="row5col4Grid" id="row5col4Id">
+
+                        <div class="circle" id="circleId54"></div>
+
+                    </div>
+
+                    <div class="row5col5Grid" id="row5col5Id">
+
+                        <div class="circle" id="circleId55"></div>
+
+                    </div>
+
+                    <div class="row5col6Grid" id="row5col6Id">
+
+                        <div class="circle" id="circleId56"></div>
+
+                    </div>
+
+                    <div class="row5col7Grid" id="row5col7Id">
+
+                        <div class="circle" id="circleId57"></div>
+
+                    </div>
+
+
+                    <div class="row6col1Grid" id="row6col1Id">
+
+                        <div class="circle" id="circleId61"></div>
+
+                    </div>
+
+                    <div class="row6col2Grid" id="row6col2Id">
+
+                        <div class="circle" id="circleId62"></div>
+
+                    </div>
+
+                    <div class="row6col3Grid" id="row6col3Id">
+
+                        <div class="circle" id="circleId63"></div>
+
+                    </div>
+
+                    <div class="row6col4Grid" id="row6col4Id">
+
+                        <div class="circle" id="circleId64"></div>
+
+                    </div>
+
+                    <div class="row6col5Grid" id="row6col5Id">
+
+                        <div class="circle" id="circleId65"></div>
+
+                    </div>
+
+                    <div class="row6col6Grid" id="row6col6Id">
+
+                        <div class="circle" id="circleId66"></div>
+
+                    </div>
+
+                    <div class="row6col7Grid" id="row6col7Id">
+
+                        <div class="circle" id="circleId67"></div>
+
+                    </div>
+
+
+                    <div class="row7col1Grid" id="row7col1Id">
+
+                        <div class="circle" id="circleId71"></div>
+
+                    </div>
+
+                    <div class="row7col2Grid" id="row7col2Id">
+
+                        <div class="circle" id="circleId72"></div>
+
+                    </div>
+
+                    <div class="row7col3Grid" id="row7col3Id">
+
+                        <div class="circle" id="circleId73"></div>
+
+                    </div>
+
+                    <div class="row7col4Grid" id="row7col4Id">
+
+                        <div class="circle" id="circleId74"></div>
+
+                    </div>
+
+                    <div class="row7col5Grid" id="row7col5Id">
+
+                        <div class="circle" id="circleId75"></div>
+
+                    </div>
+
+                    <div class="row7col6Grid" id="row7col6Id">
+
+                        <div class="circle" id="circleId76"></div>
+
+                    </div>
+
+                    <div class="row7col7Grid" id="row7col7Id">
+
+                        <div class="circle" id="circleId77"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+                <div class="flexboxGridTimerSecondPlayer" id="flexboxGridTimerSecondPlayerId"></div>
+
+            <div class="gameControlsGrid" id="gameControlsGridId"> 
+
+                <div class="gameControls zIndexMinusTwo opacityMin" id="gameControlsId">
+
+                    <input type="button" value="Start" class="gameControlsButtons zIndexMinusTwo opacityMin" id="gameControlsButtonsStartId"> 
+                    <input type="button" value="Finish" class="gameControlsButtons zIndexMinusTwo opacityMin" id="gameControlsButtonsFinishId"> 
+                    <input type="button" value="Reset" class="gameControlsButtons zIndexMinusTwo opacityMin" id="gameControlsButtonsResetId"> 
+
+                </div>
+
+            </div>
+
+            <div class="player1NameGrid" id="player1NameGridId">
+
+                <div class="playerName zIndexMinusTwo opacityMin" id="player1NameId">Ingame first player name</div>
+
+            </div>
+
+            <div class="player2NameGrid" id="player2NameGridId">
+
+                <div class="playerName zIndexMinusTwo opacityMin" id="player2NameId"> Ingame second player name</div>
+
+            </div>
+
+        </div>
+
+        <div class="marginTop MarginsTopBottom" id="marginTopId"></div>
+        <div class="marginBottom marginsTopMottom" id="marginBottomId">
+
+            <div id="fpsTimer1"></div>
+            <div id="fpsBackground"></div>
+            <div id="fpsTimer2"></div>
+
+        </div>
+        
+        <div class="marginLeft marginsLeftRight" id="marginLeftId"></div>
+        <div class="marginRight marginsLeftRight" id="marginRightId"></div>
+
+    </div>
+
+<script src="p5/p5.js"></script>
+<script src="gameCore.js"></script>
+<script src="background.js"></script>
+<script src="playerOneTimer.js"></script>
+<script src="playerTwoTimer.js"></script>
+
+</body>
+
+</html>
