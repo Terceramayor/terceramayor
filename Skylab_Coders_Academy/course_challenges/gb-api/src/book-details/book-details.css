@@ -1,0 +1,107 @@
+@font-face {
+    font-family: defaultFont;
+    src: url('./assets/MontserratExtraLight.ttf');
+
+  }
+
+  @font-face {
+ 
+    font-family: defaultFont2;
+    src: url('./assets/MontserratThin.ttf');
+  }
+
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: defaultFont;
+    }
+
+body{
+
+display: flex;
+justify-content: center;
+
+}
+
+.main_block--flexdisplay{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title{
+    margin: 25px;
+
+
+}
+
+.middleBlock{
+
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    
+}
+
+.image{
+
+    height: 30vw;
+    width: auto;
+}
+
+.middleBlockRight{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.furtherInfo{
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.wikipediaIcon, .moreBooksIcon, .returnIcon{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    transition: border 100ms, background-color 100ms;
+
+
+}
+
+.wikipediaIcon:hover, .moreBooksIcon:hover, .returnIcon:hover{
+
+    background-color: rgb(216, 216, 216);
+    border: 2px solid grey;
+
+}
+
+.wikipediaIcon:active, moreBooksIcon:active, returnIcon:active{
+    background-color: rgb(203, 239, 255);
+    border: 2px solid grey;
+    
+    }
+
+.author, .briefDescription{
+font-family: defaultFont2;
+padding: 25px;
+
+}
+
+.editionInfoBlock{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    white-space: pre-wrap;
+    padding: 25px;
+
+
+}
