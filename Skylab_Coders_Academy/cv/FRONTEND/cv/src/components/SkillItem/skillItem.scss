@@ -1,0 +1,19 @@
+@import './../../assets/-globalStyles.scss';
+
+.professional_skill{
+
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+}
+
+.country__flag{
+
+    width: 30px;
+
+}

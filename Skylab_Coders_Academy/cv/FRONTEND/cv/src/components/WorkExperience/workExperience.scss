@@ -1,0 +1,30 @@
+@import './../../assets/-globalStyles.scss';
+
+.working__experience__container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $darkBackground;
+    min-width: 500px;
+    
+
+}
+
+.experience{
+
+    display: flex;
+    flex-direction: column;
+    background-color: $lightBackground;
+    padding: 50px 0;
+    
+
+
+    width: 100%;
+
+}
+
+.title--paddings{
+    padding: 25px 0 ;
+}
+

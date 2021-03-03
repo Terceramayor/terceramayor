@@ -1,0 +1,26 @@
+//Fonts
+
+@font-face {
+    font-family: "fontExtraLight";
+    src: url('./fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: "fontLight";
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: "fontStandard";
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+
+//colors
+$fontColor: rgb(255, 255, 255);
+
+$darkBackground: #a1a1a1;
+$pageBackground: white;
+$lightBackground:#000000;
+$itemColor:#e0e0e0;
+

@@ -1,0 +1,29 @@
+@import './../../assets/-globalStyles.scss';
+
+.education, .education__all__items__container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $lightBackground;
+    min-width: 500px;
+
+}
+
+.education{
+    padding: 50px 0;
+}
+
+.education__all__items__container{
+
+    background-color: $darkBackground;
+
+}
+
+.education--paddings{
+
+padding: 25px 0;
+
+}
+
