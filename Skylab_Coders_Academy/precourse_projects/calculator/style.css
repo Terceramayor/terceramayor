@@ -1,0 +1,254 @@
+:root{
+    --button_size: 75px; /* Esta variable controla el tamaño de la calculadora. Valoes como el tamaño de botones, tamaño del texto, padding, etc. están referenciados a esta variable */
+}
+
+
+.general_grid{
+    display: grid;
+    grid-template-columns: var(--button_size) var(--button_size) var(--button_size) var(--button_size) calc(var(--button_size)*0.10);
+    grid-template-rows:    var(--button_size) calc(var(--button_size)*0.4) var(--button_size) var(--button_size) var(--button_size) var(--button_size) var(--button_size) var(--button_size);
+    
+}
+
+/* GUIDE COLUMN ELEMENTS ELEMENTS -Starting from the top of the calculator */ 
+
+.display_guide_grid{
+
+    grid-column: 5 / 6 ;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-items: start;
+
+}
+
+.sign_sequence_guide_grid{
+
+    grid-column: 5 / 6 ;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-items: start;
+    
+}
+
+.console_guide_grid{
+
+    grid-column: 5 / 6 ;
+    grid-row: 8 / 9;
+    align-self: center;
+    justify-items: start;
+    
+}
+
+/* FIRST ROW ELEMENTS -Starting from the top of the calculator */ 
+
+.display_grid{
+    grid-column: 1 / 5 ;
+    grid-row: 1 / 2;
+    color: white;
+    background-color: rgb(75, 75, 75);
+    font-family: Arial;
+    font-size: calc(var(--button_size)*0.75);
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: right;
+    padding-top: calc(var(--button_size)*0.15);
+    padding-right: 10px;
+    margin: 1px;
+}
+
+.sign_sequence_grid{
+    grid-column: 1 / 5 ;
+    grid-row: 2 / 3;
+    color: white;
+    background-color: rgb(75, 75, 75);
+    font-family: Arial;
+    font-size: calc(var(--button_size)*0.25);
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: right;
+    padding-top: calc(var(--button_size)*0.05);
+    padding-right: 10px;
+    margin: 1px;
+}
+
+.ac_grid{
+    grid-column: 1 / 3 ;
+    grid-row: 3 / 4;
+}
+
+.clear_grid{
+    grid-column: 3 / 4 ;
+    grid-row: 3 / 4;
+}
+
+.divide_grid{
+    grid-column: 4 / 5 ;
+    grid-row: 3 / 4;
+}
+
+/* SECOND ROW ELEMENTS */
+
+.seven_grid{
+    grid-column: 1 / 2 ;
+    grid-row: 4 / 5;
+}
+
+.eight_grid{
+    grid-column: 2 / 3 ;
+    grid-row: 4 / 5;
+}
+
+.nine_grid{
+    grid-column: 3 / 4 ;
+    grid-row: 4 / 5;
+}
+
+.multiply_grid{
+    grid-column: 4 / 5 ;
+    grid-row: 4 / 5;
+}
+
+/* THIRD ROW ELEMENTS */
+
+.four_grid{
+    grid-column: 1 / 2 ;
+    grid-row: 5 / 6;
+}
+
+.five_grid{
+    grid-column: 2 / 3 ;
+    grid-row: 5 / 6;
+}
+
+.six_grid{
+    grid-column: 3 / 4 ;
+    grid-row: 5 / 6;
+}
+
+.substract_grid{
+    grid-column: 4 / 5 ;
+    grid-row: 5 / 6;
+}
+
+/* FOURTH ROW ELEMENTS */
+
+.one_grid{
+    grid-column: 1 / 2 ;
+    grid-row: 6 / 7;
+}
+
+.two_grid{
+    grid-column: 2 / 3 ;
+    grid-row: 6 / 7;
+}
+
+.three_grid{
+    grid-column: 3 / 4 ;
+    grid-row: 6 / 7; 
+}
+
+.add_grid{
+    grid-column: 4 / 5 ;
+    grid-row: 6 / 7;  
+}
+
+/* FIFTH ROW ELEMENTS */
+
+.zero_grid{
+    grid-column: 1 / 2 ;
+    grid-row: 7 / 8;
+}
+
+.negative_possitive_grid {
+    grid-column: 2 / 3 ;
+    grid-row: 7 / 8;
+}
+
+.coma_grid{
+    grid-column: 3 / 4 ;
+    grid-row: 7 / 8;
+}
+
+.equal_grid{
+    grid-column: 4 / 5 ;
+    grid-row: 7 / 8;
+}
+
+.console_grid{
+    grid-column: 1 / 5 ;
+    grid-row: 8 / 9;
+
+}
+
+/* COMMON FORMATING ELEMENTS */
+
+.display_guide, .sign_guide, .console_guide {
+
+    height: calc(var(--button_size)*0.75);
+
+}
+
+.console_grid{
+
+    font-family: Arial;
+    font-size: calc(var(--button_size)*0.2);
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    margin: 1px;
+    background-color: brown;    
+    padding-top: calc(var(--button_size)*0.35);
+    color: wheat;
+
+}
+
+.ac_grid, .clear_grid, .seven_grid, .eight_grid, .nine_grid, .four_grid, .five_grid, .six_grid, .one_grid, .two_grid, .three_grid, .zero_grid, .negative_possitive_grid, .coma_grid, .divide_grid, .multiply_grid, .substract_grid, .add_grid, .equal_grid{
+    font-family: Arial;
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    margin: 1px;
+}
+
+.central_block_buttons{  
+    background-color: rgb(150, 150, 150);
+    color: black;
+    text-align: center;
+    font-size: calc(var(--button_size)*0.3);
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.central_block_buttons:hover{
+    background-color: rgb(100,100,100);
+    font-size: calc(var(--button_size)*0.4);
+}
+
+.central_block_buttons:active{
+    background-color: black;
+    color: rgb(150, 150, 150);
+    font-size: calc(var(--button_size)*0.5);
+    font-weight: bold;
+}
+
+.operations_block_buttons{
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: calc(var(--button_size)*0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.operations_block_buttons:hover{
+    background-color:rgb(230, 150, 0);
+    font-size: calc(var(--button_size)*0.4);   
+}
+
+.operations_block_buttons:active{
+    background-color: white;
+    color: orange;
+    font-size: calc(var(--button_size)*0.5);
+    font-weight: bold;    
+}
