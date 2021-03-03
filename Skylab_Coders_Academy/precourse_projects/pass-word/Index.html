@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+
+</head>
+<body class="common_formating">
+
+    <div class="general_grid">
+
+        <div class="console_grid">
+
+            <div class="console console_normal" id="console_id">Enter your name and click "start" to begin a new game</div>
+
+        </div>
+
+        <div class="name_play_stop_grid">
+            
+            <div class="name_play_stop_grid_common_formating">
+
+                <label for="Your_name" class="name_text">Please populate your name here: </label>
+                <input type="text" id="Your_name" class="input_text" placeholder="Type your name in here">
+                <input type="button" value="Start!" class="start_button" id="start">
+                <input type="button" value="Reset game" class="reset_button" id="reset">
+
+            </div>
+
+        </div>
+
+        <div class="game_status_grid">
+
+            <div class="status_bubbles"> 
+
+                <div class="correct_bubble">
+
+                    <div class="correct_words" id="correct">-</div>
+                    <div>Correct</div>
+
+                </div>
+
+                <div class="incorrect_bubble">
+
+                    <div class="incorrect_words" id="incorrect">-</div>
+                    <div>Inorrect</div>
+
+                </div>
+
+                <div class="remaining_bubble">
+
+                    <div class="remaining_words" id="remaining">-</div>
+                    <div>Remaining</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ranking_grid">Ranking
+
+            <table class="ranking_table">
+                <thead>
+                    <tr>
+                        <th>Possition</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td id="pos1">1.</td>
+                        <td id="pos1_name">J</td>
+                        <td id="pos1_score">9</td>
+                    </tr>
+                    <tr>
+                        <td id="pos2">2.</td>
+                        <td id="pos2_name">I</td>
+                        <td id="pos2_score">8</td>
+                    </tr>
+                    <tr>
+                        <td id="pos3">3.</td>
+                        <td id="pos3_name">H</td>
+                        <td id="pos3_score">7</td>
+                    </tr>
+                    <tr>
+                        <td id="pos4">4.</td>
+                        <td id="pos4_name">G</td>
+                        <td id="pos4_score">6</td>
+                    </tr>
+                    <tr>
+                        <td id="pos5">5.</td>
+                        <td id="pos5_name">F</td>
+                        <td id="pos5_score">5</td>
+                    </tr>
+                    <tr>
+                        <td id="pos6">6.</td>
+                        <td id="pos6_name">E</td>
+                        <td id="pos6_score">4</td>
+                    </tr>
+                    <tr>
+                        <td id="pos7">7.</td>
+                        <td id="pos7_name">D</td>
+                        <td id="pos7_score">3</td>
+                    </tr>
+                    <tr>
+                        <td id="pos8">8.</td>
+                        <td id="pos8_name">C</td>
+                        <td id="pos8_score">2</td>
+                    </tr>
+                    <tr>
+                        <td id="pos9">9.</td>
+                        <td id="pos9_name">B</td>
+                        <td id="pos9_score">1</td>
+                    </tr>
+                    <tr>
+                        <td id="pos10">10.</td>
+                        <td id="pos10_name">A</td>
+                        <td id="pos10_score">0</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="timer_grid">
+
+            <div class="timer_bubble" id="timer">-</div>
+
+        </div>  
+
+        <div class="roscon_grid">
+
+            <div class="bloking_image" id="bloking_image_id"></div>
+
+            <div class="waiting_gif" id="waiting_gif_id" > 
+
+                <img src="Waiting.gif" alt="waiting_gif"/>
+
+            </div>
+
+                <div class="current_letter_grid" id="current_letter_grid">-</div>
+
+                <div class="current_definition_answer_grid" id="current_definition_answer">
+                    
+                    <div class="definition">
+
+                        <div class="definition_title" id="definition_title:id">Definition:</div>
+                        <div class="definition_text" id="definition_text_id">-</div>
+
+                    </div>
+                    
+                    <div class="answer">
+
+                        <textarea class="text_area" id="text_answer" cols="20" rows="2">"Your answer"</textarea>
+
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="skip_letter_grid playing_controls" >
+
+                    <button class="skip_letter_class" id="skip_letter" type="button">Pasapalabra</button>
+
+                </div>
+
+                <div class="submit_answer_grid playing_controls" >
+
+                    <button class= "submit_answer_class" id="submit_answer" type="button">Answer</button>
+
+                </div>
+
+                <div class="letter_a_grid" id="letter_a">A</div>
+
+                <div class="letter_b_grid" id="letter_b">B</div>
+
+                <div class="letter_c_grid" id="letter_c">C</div>
+
+                <div class="letter_d_grid" id="letter_d">D</div>
+
+                <div class="letter_e_grid" id="letter_e">E</div>
+
+                <div class="letter_f_grid" id="letter_f">F</div>
+
+                <div class="letter_g_grid" id="letter_g">G</div>
+
+                <div class="letter_h_grid" id="letter_h">H</div>
+
+                <div class="letter_i_grid" id="letter_i">I</div>
+
+                <div class="letter_j_grid" id="letter_j">J</div>
+
+                <div class="letter_k_grid" id="letter_k">K</div>
+
+                <div class="letter_l_grid" id="letter_l">L</div>
+
+                <div class="letter_m_grid" id="letter_m">M</div>
+
+                <div class="letter_n_grid" id="letter_n">N</div>
+
+                <div class="mid_rosco_progress" id="mid_rosco">1/2</div>
+
+                <div class="letter_ñ_grid" id="letter_ñ">Ñ</div>
+
+                <div class="letter_o_grid" id="letter_o">O</div>
+
+                <div class="letter_p_grid" id="letter_p">P</div>
+
+                <div class="letter_q_grid" id="letter_q">Q</div>
+
+                <div class="letter_r_grid" id="letter_r">R</div>
+
+                <div class="letter_s_grid" id="letter_s">S</div>
+
+                <div class="letter_t_grid" id="letter_t">T</div>
+
+                <div class="letter_u_grid" id="letter_u">U</div>
+
+                <div class="letter_v_grid" id="letter_v">V</div>
+
+                <div class="letter_w_grid" id="letter_w">W</div>
+
+                <div class="letter_x_grid" id="letter_x">X</div>
+
+                <div class="letter_y_grid" id="letter_y">Y</div>
+
+                <div class="letter_z_grid" id="letter_z">Z</div>
+
+        </div>
+
+    </div>
+
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
