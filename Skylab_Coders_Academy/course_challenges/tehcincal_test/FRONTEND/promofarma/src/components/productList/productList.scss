@@ -1,0 +1,14 @@
+.products-list__container{
+
+    margin: 25px 25px;
+
+}
+
+@media screen and (max-width: 950px) {
+
+
+    .products-list__container{
+        width: 500px;
+    }
+
+}
