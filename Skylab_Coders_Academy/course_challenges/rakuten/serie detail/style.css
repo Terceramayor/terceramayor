@@ -1,0 +1,840 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: NotoSans-Bold, sans-serif;
+    border: none;
+    outline: 0;
+
+}
+
+p{
+
+    margin: 0px;
+
+}
+
+h2{
+
+    font-size: 20px;
+    font-weight: 550;
+
+}
+
+body{
+
+    position: relative;
+    background-color: white;
+
+}
+
+.top_logo--possitioning{
+
+    position: absolute;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.search_box_mobile{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: absolute;
+
+    height: 55px;
+
+    width: 100%;
+
+
+}
+
+.search_icon_mobile--formating{
+
+    display: flex;
+    align-items: center;
+    box-sizing: unset;
+
+
+    position: relative;
+
+    height: 20px;
+
+    margin: 0px;
+    padding: 25px;
+
+}
+
+.navigation-block{
+
+    z-index: 2;
+    position: fixed;
+    display: none;
+        
+}
+
+.generic_slider--formating{
+
+    width: 100vw;
+
+}
+
+.logo-seacrh--zIndex{
+
+    z-index: 3;
+
+}
+
+.movies_presentation{
+
+    display: flex;
+    justify-content:space-evenly;
+
+    margin-top: 10px;
+
+    padding: 0 7px;
+
+    width: 100%;
+
+}
+
+.movies_presentation--formating{
+
+    border: 3px solid #171717;
+    margin: 0 2px;
+    width: 32vw;
+    transition: color 0.15s;
+
+}
+
+.movies_presentation--formating:hover{
+
+    border: 3px solid yellow;
+    margin: 0 2px;
+
+}
+
+.movies_presentation--remove_for_mobile{
+
+    display: none;
+
+}
+
+.movie-selected{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.movie_presentation_container{
+
+width: 100%;
+
+}
+
+.selected-serie-poster--formating{
+
+    width: 100%;
+    
+   
+}
+
+.selected-serie_details{
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.last_movies, .episode_selection{
+
+    padding: 25px 10px;
+
+    color: white;
+
+}
+
+.serie-info--layout{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F1F1;
+
+}
+
+.social_media{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.social_media--formating{
+
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    margin: 25px 10px;
+
+    width: 40px;
+
+}
+
+.social_media--desktop{
+
+    display: none;
+}
+
+ .serie-info-container{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    background-color: white;
+    width: 100%;
+    padding: 25px 25px;
+
+}
+
+.puntuacion, .direccion_reparto, .language-subs_content,.languages_subs, .series-info_icons{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+
+.languages_subs{
+
+    padding-top: 25px;
+
+}
+
+.languages_subs--formating--positioning,.series-info_icons--formating--positioning{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.languages_subs_text--formating--positioning,.series-info_text--formating--positioning{
+
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.languages_subs_icons--size, .series-info_icons--size{
+
+    height: 15px;
+
+}
+
+.metascore, .staff, .language-subs_language, .language-subs_subs{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+
+}
+
+.metascore, .staff{
+
+    align-items: center;
+
+}
+
+.staff_image--size{
+
+    width: 100px;
+
+}
+
+/* circle */
+
+.circle-wrap {
+
+    z-index: 0;
+
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    background: #e6e2e7;
+    border-radius: 50%;
+  }
+
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+
+  .circle-wrap .circle .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #9e00b1;
+  }
+  .circle-wrap .circle .mask.full,
+  .circle-wrap .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(126deg);
+  }
+   
+  @keyframes fill {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(126deg);
+    }
+  }
+
+  .circle-wrap .inside-circle {
+
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* circle */
+
+.--strong{
+
+    font-weight: 700;
+
+}
+
+.section-cinema, .episode-selection-title{
+
+
+    font-size: 2vw;
+    color: black; 
+
+}
+
+.carousel_item--flexrow{
+
+    display: flex;
+
+}
+
+.episode-name{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 5px;
+    color: black;
+
+}
+
+.episode_thumbnail{
+
+    width: 20vw;
+    
+
+}
+
+.episode--alignment{
+
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20vw;
+
+    text-align: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+
+.footer__navigation-bar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 2;
+
+    position: fixed;
+    bottom: 0;
+
+    position: fixed;
+    
+    border-top: 1px solid #999999;
+    background-color: black;
+    width: 100%;
+
+    padding: 12px 25px;
+
+}
+
+.footer_navigation_icons{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 1000;
+    color: #999999;
+
+
+}
+
+.footer_navigation_icons--size{
+
+    height: 20px;
+    
+}
+
+.footer--flex{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+
+
+    background-color: #0D0D0D;
+
+}
+
+.footer_logo{
+
+    height: 30px;
+    margin: 25px 0px;
+
+}
+
+.footer_links--flex{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 75vw;
+
+}
+
+.footer_links--formating-possitioning{
+
+    text-decoration: none;
+    color: #cacaca;
+    margin: 3px 8px;
+    font-size: 15px;
+
+    white-space: nowrap;
+
+    transition: color 0.15s
+
+}
+
+.footer_links--formating-possitioning:hover{
+
+    color: white;
+
+}
+
+.copytight--formating{
+
+    padding-top: 15px;
+    padding-left: 8px;
+    color: #8a8a8a;
+    font-size: 12px;
+
+}
+
+.footer-info--flex{
+
+    display: none;
+
+}
+
+@media screen and (min-width: 950px) {
+
+    .top_logo--possitioning{
+
+        position: fixed;
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+    
+    }
+
+    .navigation-block{
+
+        display: flex;
+        justify-content: space-between;
+
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 55px;
+
+        font-size: 13px;
+
+    }
+
+    .navigation-block__left-side{
+
+        display: flex;
+        align-items: center;
+        margin-left: 110px;
+        
+    }
+
+    .navigation-block__right-side{
+
+        display: flex;
+        align-items: center;
+
+        margin-right: 25px;
+        
+    }
+
+    .selector--formating{
+
+        text-decoration: none;
+        padding: 0px 10px;
+        color: white;
+        transition: color 0.15s;
+
+    }
+
+    .selector--formating:hover{
+
+        
+        color: yellow;
+
+    }
+
+    .drop-arrow--formating{
+
+        height: 10px;
+        margin-left: -10px;
+
+    }
+
+    .dropdown-cinema, .dropdown-subscription{
+
+        position: relative;
+        white-space: nowrap;
+
+    }
+
+    .dropmenu-subscription,.dropmenu-cinema{
+
+        z-index: 2;
+        display: none;
+        position: absolute;
+        padding-top: 15px;  
+        width: 175px;  
+        background-color: black;
+
+    }
+
+    .dropdown-cinema:hover .dropmenu-cinema{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .dropdown-subscription:hover .dropmenu-subscription{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+     .dropdown-subscription:hover .drop-arrow--formating{
+
+        transform: rotate(180deg);
+
+    }
+
+    .dropdown-cinema:hover .drop-arrow--formating{
+
+        transform: rotate(180deg);
+
+    }
+
+    .dropdpwn-items_formating{
+
+        color: white;
+        text-decoration: none;
+        margin: 10px 10px;
+        font-weight: 500;
+        transition: color 0.15s;
+
+    }
+
+    .dropdpwn-items_formating:hover{
+
+        color: yellow;
+        text-decoration: none;
+        margin: 10px 10px;
+
+    }
+
+  
+    .navigation-button--formating{
+
+        height: 35px;
+        background-color:  #FFE300;
+        
+    }
+
+    .nav_items_registrarse--padding,.nav_items--padding{
+
+        padding: 0 10px;
+        font-weight: 800;
+        border-radius: 5px;
+        transition: background-color 0.15s;
+        
+    }
+
+    .nav_items--padding:hover{
+
+        color: yellow;
+        
+        
+    }
+
+    .nav_items_registrarse--padding:hover{
+
+        background-color: rgb(224, 224, 20);
+
+    }
+
+    .nav_items_ayuda--formating{
+
+        color: #999999;
+        white-space: nowrap;
+
+    }
+
+    .search_box_mobile{
+
+        display: none;
+
+    }
+
+    .search_box{
+        display: flex;
+        align-items: center;
+        margin-left: 7px;
+        background-color: #333333;
+
+    }
+    .search_icon_desktop--formating{
+
+        box-sizing: unset;
+
+        display: flex;
+        align-items: center;
+    
+        position: relative;
+    
+        height: 20px;
+    
+        margin: 0px;
+        padding:7px;
+    
+    }
+    
+    .nav_search-formating{
+
+        background-color: #333333;
+        margin: 0 5px; 
+        width: 75px;
+        color: white;
+
+    }
+
+    .serie-info--layout{
+
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .social_media{
+
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+    
+    }
+
+    .social_media--desktop{
+
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        
+    }
+
+    .social_media--flex{
+
+        display:flex;
+        flex-direction: row;
+
+    }
+
+    .footer-info--flex{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 30px 150px;
+        
+
+        background-color: #212121;
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .support--flex{
+
+        display: flex;
+        flex-direction: row;
+        background-color: #212121;
+        color: white;
+        
+        
+    }
+
+    .support-elelemnts--flex{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .serie-info-container{
+
+        margin: 25px 25px;
+    
+    }
+
+    .title-footer-info{
+
+        font-size: 25px;
+
+    }
+
+    .title-footer-info, .support-elements--positioning{
+
+        margin: 10px 10px;
+
+    }
+
+    .title-footer-text{
+
+        text-align: center;
+        
+
+        width: 65%;
+
+    }
+
+    .support-elements-images{
+
+        height: 100px;
+
+    }
+
+    .footer--flex{
+
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+
+
+    }
+
+    .footer_links--flex{
+
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .footer_links--formating-possitioning{
+
+        margin: 0px 8px; 
+        padding: 0px;
+
+    }
+    
+    .copytight--formating{
+
+        padding-top: 0px;
+    
+    }
+
+
+
+    .footer__navigation-bar{
+
+        display: none;
+
+    }
+
+} 

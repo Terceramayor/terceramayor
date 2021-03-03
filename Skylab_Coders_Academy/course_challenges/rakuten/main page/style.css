@@ -1,0 +1,619 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: NotoSans-Bold, sans-serif;
+    border: none;
+    outline: 0;
+
+}
+
+p{
+
+    margin: 0px;
+
+}
+
+h2{
+
+    font-size: 20px;
+    font-weight: 550;
+
+}
+
+body{
+
+    position: relative;
+    background-color: #171717;
+
+}
+
+.top_logo--possitioning{
+
+    position: absolute;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.search_box_mobile{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: absolute;
+
+    height: 55px;
+
+    width: 100%;
+
+
+}
+
+.search_icon_mobile{
+
+    display: flex;
+    align-items: center;
+    box-sizing: unset;
+
+
+    position: relative;
+
+    height: 20px;
+
+    margin: 0px;
+    padding: 25px;
+
+}
+
+
+
+
+.nav-block{
+
+    z-index: 2;
+    position: fixed;
+    display: none;
+        
+}
+
+.generic_slider--formating{
+
+    width: 100vw;
+
+}
+
+.logo-search--zindex{
+
+    z-index: 3;
+
+}
+
+.movies_presentation{
+
+    display: flex;
+    justify-content:space-evenly;
+
+    margin-top: 10px;
+
+    padding: 0 7px;
+
+    width: 100%;
+
+}
+
+.movies_presentation--formating{
+
+    border: 3px solid #171717;
+    margin: 0 2px;
+    width: 32vw;
+    transition: color 0.15s;
+
+}
+
+.movies_presentation--formating:hover{
+
+    border: 3px solid yellow;
+    margin: 0 2px;
+
+}
+
+.movies_presentation--remove_for_mobile{
+
+    display: none;
+
+}
+
+.movie_types, .last_movies, .movie_selection{
+
+    padding: 0 10px;
+    margin: 10px 0px;
+
+    color: white;
+
+}
+
+.carousel-items--flex{
+
+
+display: flex;
+justify-content: center;
+
+
+}
+
+.movies-carousel--format{
+
+    border: 3px solid #171717;
+    margin: 0 2px;
+    width: 25vw;
+    transition: color 0.15s;
+
+}
+
+.movies-carousel-mobile--hide{
+
+    display: none;
+
+}
+
+.movies-carousel--format:hover{
+
+    border: 3px solid yellow;
+    margin: 0 2px;
+
+}
+
+.section-genres, .section-cinema, .section-selection{
+
+margin-top: 20px;  
+font-size: 2vw; 
+
+}
+
+.movies-types-carousel--format{
+
+    border: 3px solid #171717;
+    margin: 0 10px;
+    width: 100px;
+
+}
+
+.footer__nav-bar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 2;
+
+    position: fixed;
+    bottom: 0;
+
+    position: fixed;
+    
+    border-top: 1px solid #999999;
+    background-color: black;
+    width: 100%;
+
+    padding: 12px 25px;
+
+}
+
+.footer_nav_icons{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 1000;
+    color: #999999;
+
+
+}
+
+.footer_nav_icons--size{
+
+    height: 20px;
+    
+}
+
+.footer--flex{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.footer-logo{
+
+    height: 30px;
+    margin: 25px 0px;
+
+}
+
+.footer-links--flex{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 75vw;
+
+}
+
+.footer_links--formating-possitioning{
+
+    text-decoration: none;
+    color: #cacaca;
+    margin: 3px 8px;
+    font-size: 15px;
+
+    white-space: nowrap;
+
+    transition: color 0.15s
+
+}
+
+.footer_links--formating-possitioning:hover{
+
+    color: white;
+
+}
+
+.copyright--formating{
+
+    padding-top: 15px;
+    padding-left: 8px;
+    color: #8a8a8a;
+    font-size: 12px;
+
+}
+
+.footer-info--flex{
+
+    display: none;
+
+}
+
+@media screen and (min-width: 950px) {
+
+    .top_logo--possitioning{
+
+        position: fixed;
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+    
+    }
+
+    .nav-block{
+
+        display: flex;
+        justify-content: space-between;
+
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 55px;
+
+        font-size: 13px;
+
+    }
+
+    .nav-block__left-side{
+
+        display: flex;
+        align-items: center;
+        margin-left: 110px;
+        
+    }
+
+    .nav-block__right-side{
+
+        display: flex;
+        align-items: center;
+
+        margin-right: 25px;
+        
+    }
+
+    .selector--formating{
+
+        text-decoration: none;
+        padding: 0px 10px;
+        color: white;
+        transition: color 0.15s;
+
+    }
+
+    .selector--formating:hover{
+
+        
+        color: yellow;
+
+    }
+
+    .drop-arrow--formating{
+
+        height: 10px;
+        margin-left: -10px;
+
+    }
+
+    .dropdown-cinema, .dropdown-subscription{
+
+        position: relative;
+        white-space: nowrap;
+
+    }
+
+    .dropmenu-subscription,.dropmenu-cinema{
+
+        z-index: 2;
+        display: none;
+        position: absolute;
+        padding-top: 15px;  
+        width: 175px;  
+        background-color: black;
+
+    }
+
+    .dropdown-cinema:hover .dropmenu-cinema{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .dropdown-subscription:hover .dropmenu-subscription{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+     .dropdown-subscription:hover .drop-arrow--formating{
+
+        transform: rotate(180deg);
+
+    }
+
+    .dropdown-cinema:hover .drop-arrow--formating{
+
+        transform: rotate(180deg);
+
+    }
+
+    .dropdwn-items_formating{
+
+        color: white;
+        text-decoration: none;
+        margin: 10px 10px;
+        font-weight: 500;
+        transition: color 0.15s;
+
+    }
+
+    .dropdwn-items_formating:hover{
+
+        color: yellow;
+        text-decoration: none;
+        margin: 10px 10px;
+
+    }
+
+  
+    .nav-button--formating{
+
+        height: 35px;
+        background-color:  #FFE300;
+        
+    }
+
+    .nav_items_registrarse--padding,.nav_items--padding{
+
+        padding: 0 10px;
+        font-weight: 800;
+        border-radius: 5px;
+        transition: background-color 0.15s;
+        
+    }
+
+    .nav_items--padding:hover{
+
+        color: yellow;
+        
+        
+    }
+
+    .nav_items_registrarse--padding:hover{
+
+        background-color: rgb(224, 224, 20);
+
+    }
+
+    .nav_items_ayuda--formating{
+
+        color: #999999;
+        white-space: nowrap;
+
+    }
+
+    .search_box_mobile{
+
+        display: none;
+
+    }
+
+    .search_box{
+        display: flex;
+        align-items: center;
+        margin-left: 7px;
+        background-color: #333333;
+
+    }
+    .search_icon_desktop--formating{
+
+        box-sizing: unset;
+
+        display: flex;
+        align-items: center;
+    
+        position: relative;
+    
+        height: 20px;
+    
+        margin: 0px;
+        padding:7px;
+    
+    }
+    
+    .nav_search-formating{
+
+        background-color: #333333;
+        margin: 0 5px; 
+        width: 75px;
+        color: white;
+
+    }
+
+    .movies_presentation--remove_for_mobile{
+
+        display: inline;
+
+    }
+
+    .movies_presentation--formating{
+
+        width: 19vw;
+
+    }
+
+    .movies-carousel--format{
+
+        position: relative;
+        border: 3px solid #171717;
+        margin: 0 2px;
+        width: 12vw
+    
+    }
+
+    .movies-carousel-mobile--hide{
+
+        display: block;
+    
+    }
+
+    .footer-info--flex{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 30px 150px;
+        margin-top: 25px;
+        
+
+        background-color: #212121;
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .support--flex{
+
+        display: flex;
+        flex-direction: row;
+        background-color: #212121;
+        color: white;
+        
+        
+    }
+
+    .support-elements--flex{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .title-footer-info{
+
+        font-size: 25px;
+
+    }
+
+    .title-footer-info, .support-elements--positioning{
+
+        margin: 10px 10px;
+
+    }
+
+    .title-footer-text{
+
+        text-align: center;
+        
+
+        width: 65%;
+
+    }
+
+    .support-elements-images{
+
+        height: 100px;
+
+    }
+
+    .footer--flex{
+
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    .footer-links--flex{
+
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .footer_links--formating-possitioning{
+
+        margin: 0px 8px; 
+        padding: 0px;
+
+    }
+    
+    .copyright--formating{
+
+        padding-top: 0px;
+    
+    }
+
+
+
+    .footer__nav-bar{
+
+        display: none;
+
+    }
+
+} 
