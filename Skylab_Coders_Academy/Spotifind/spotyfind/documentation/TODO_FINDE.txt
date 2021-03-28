@@ -1,0 +1,34 @@
+
+FOOTER >>
+        > Quitar el print de Genres
+
+DASHBOARD>>
+
+        >> Mover el boton favoritos a DETAIL
+        
+DETAIL >>
+        >> Poner el favoritos en Artist // 
+            cuando click > save en LocalStorage >>
+                >> fetch del artista
+                >> leer nombre de usuario
+                >> si esta, nada
+                >> si no esta, hacer push al objeto para guardar
+        >> Borramos Genres de Album-Detail
+        >> Coger el objeto y Vincular con TrackNames
+        >> Habilitar Artist Name // TrackName
+        
+USER-PROFILE >>
+
+        >> En la carga, Load LocalStorage
+        >> Definir objeto para guardar
+          > objeto prop username [
+            >> link img
+            >> artistname
+            >> genres
+            >> popularidad
+            >> followers
+        ]
+    
+    
+PROPTYPES        
+PASARLO TODO A REDUX!!!!

@@ -1,0 +1,32 @@
+@import './assets/global-styles';
+
+html {
+  min-height: 100%;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $text-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, rgb(51, 51, 51) 3%, black 97%);
+}
+
+#root {
+  padding-bottom: 100px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width:600px){
+  body{
+    overflow-x: hidden;
+  }
+}

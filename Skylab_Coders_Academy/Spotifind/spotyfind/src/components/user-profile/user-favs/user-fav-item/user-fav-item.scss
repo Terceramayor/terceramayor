@@ -1,0 +1,92 @@
+@import './../../../../assets/global-styles';
+
+
+.card-artist-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 15px;
+    height: 150px;
+    // border: 2px solid $grey;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.card-artist-item:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.329);
+}
+
+.card-artist-item__details{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item__image__fav{
+    border-radius: 15px 0 0 15px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.artist__info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.artist__name{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.artist__genres{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.artist__info-popularity{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+    color: $grey;
+}
+
+.card-artist-item__buttons > button{
+    all: unset;
+    font-size: 25px;
+    margin-right: 5px;
+    color: $grey;
+}
+
+.card-artist-item__buttons >button:hover{
+    color: $black;
+}
+
+@media screen and (max-width: 600px){
+    .card-artist-item{
+        height: 400px;
+    }
+
+    .item__image__fav{  
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    .card-artist-item__details{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

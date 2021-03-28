@@ -1,0 +1,48 @@
+@import './../../assets/global-styles';
+
+.root-navigation {
+    background-color: $darkGrey;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0px 10px;
+    // border-bottom: 1px solid $grey;
+    box-shadow: 0 0.5px 0.5px 0.5px $black;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.logo--desktop{
+    width: 180px;
+}
+
+.logo--mobile{
+    display: none;
+}
+
+.navigation__home,
+.navigation__user{
+    text-decoration: none;
+    color: $white;
+    margin: 0px 10px;
+}
+.navigation__home:hover,
+.navigation__user:hover{
+    text-decoration: none;
+    color: $grey;
+}
+
+@media screen and (max-width: 600px){
+    .logo--desktop{
+        display: none;
+    }
+
+    .logo--mobile{
+        display: block;
+        height: 38px;
+    }
+}

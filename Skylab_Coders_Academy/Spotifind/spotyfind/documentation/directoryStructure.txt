@@ -1,0 +1,78 @@
+                        
+ESTRUCTURA DE CARPETAS>>    ROOT/
+                                    /eslint
+                                    /package.json
+                            ROOT/SRC
+                                    /index.jsx  (llama a app)
+                                    
+                                    /app.jsx    (se decide la vista >> DASHBOARD/DETAIL/LIST || Se definen los routes/paths)
+                                    /app.css
+                                    
+                            ROOT/SRC/COMPONENTS
+                            ROOT/SRC/COMPONENTS/NAV/
+                                                    /nav.jsx
+                                                    /nav.css
+                                                    /nav.test.js
+                            ROOT/SRC/COMPONENTS/FOOTER/
+                                                    /footer.jsx
+                                                    /footer.css
+                                                    /footer.test.js
+                            ROOT/SRC/COMPONENTS/INFOAPP/
+                                                    /info-app.jsx
+                                                    /info-app.css
+                                                    /info-app.test.js
+                            ROOT/SRC/COMPONENTS/RECOMMENDATIONS
+                                                    /recommendations.jsx
+                                                    /recommendations.css
+                                                    /recommendations.test.js
+                            
+                            ROOT/SRC/COMPONENTS/ALBUM-INFO/
+                                                    /album-info.jsx
+                                                    /album-info.css
+                                                    /album-info.test.js
+                            ROOT/SRC/COMPONENTS/TRACKS/
+                                                    /tracks.jsx
+                                                    /tracks.css
+                                                    /tracks.test.js
+                            ROOT/SRC/COMPONENTS/USER-SUMMARY
+                                                    /user-summary.jsx
+                                                    /user-summary.css
+                                                    /user-summary.test.js
+                            ROOT/SRC/COMPONENTS/USER-FAVOURITES
+                                                    /user-favourites.jsx
+                                                    /user-favourites.css
+                                                    /user-favourites.test.js
+                            
+                            
+                                                   
+                            ROOT/SRC/COMPONENTS/DASHBOARD
+                                                    /dashboard.jsx
+                                                    /dashboard.css
+                                                    /dashboard.test.js
+                                                
+                            ROOT/SRC/COMPONENTS/ALBUM-DETAIL
+                                                    /album-detail.jsx
+                                                    /album-detail.css
+                                                    /album-detail.test.js
+                            ROOT/SRC/COMPONENTS/USER-PROFILE
+                                                    /user-profile.jsx
+                                                    /user-profile.css
+                                                    /user-profile.test.js
+                            
+                            ROOT/SRC/FLUX
+                            ROOT/SRC/FLUX/DISPATCHER
+                                                /dispatcher.js
+                                                
+                            ROOT/SRC/FLUX/ACTIONS
+                                                /actionTypes.js
+                                                /actions.js
+                                                /actions.test.js
+                            ROOT/SRC/FLUX/STORES
+                                                /stores.js
+                                                /stores.test.js
+                                                
+
+
+                                                
+                            
+                            

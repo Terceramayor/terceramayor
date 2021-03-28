@@ -1,0 +1,28 @@
+@import './../../assets/global-styles';
+
+.detail__tracks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    padding-bottom: 100px;
+    font-family: $text-font;
+    border-top: 1px solid $grey;
+    background: linear-gradient(180deg, rgb(14, 14, 14) 3%, rgb(48, 48, 48) 97%);
+}
+
+.tracks__title{
+    color: $white;
+    margin-top: 20px;
+}
+
+.tracks__list {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+

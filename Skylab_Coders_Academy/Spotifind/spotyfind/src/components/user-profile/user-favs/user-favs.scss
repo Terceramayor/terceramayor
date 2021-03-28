@@ -1,0 +1,31 @@
+@import './../../../assets/global-styles';
+
+
+.user-profile__favourites{
+    background-color: $white;
+    color: $black;
+    width: 80%;
+    font-family: $text-font;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.favourites__title{
+    font-size: 40px;
+}
+
+.favourites__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 600px){
+    .user-profile__favourites{
+        width: 100%;
+    }
+}

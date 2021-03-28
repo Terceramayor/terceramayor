@@ -1,0 +1,7 @@
+FEATURES >>
+            Utilizar logo.svg en detrimento de logo.png
+            Slider para el control de volumen (0-1)
+            Click en album que lleva a details, quizá todo el contenedor y no sólo la imagen?
+            Definir etiqueta para las 3 categorias en footer (con un número entre parentesis según el número de picks)
+            
+            

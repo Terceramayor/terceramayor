@@ -1,0 +1,22 @@
+npm install --jest
+
+npx create-react-app my-react-app
+npm start
+
+npm install react-router (Esto creo que no hace falta)
+npm install react-router-dom
+
+npm install react-bootstrap bootstrap
+npm install node-sass --save
+
+npm install flux
+npm install @auth0/auth0-react --save
+
+npm install --save prop-types
+
+  rules: {
+    'comma-dangle': [2, 'never'],
+    'linebreak-style': 0,
+    'global-require': 0,
+    'eslint linebreak-style': [0, 'error', 'windows']
+  }

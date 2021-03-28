@@ -1,0 +1,41 @@
+Spotifind CSS details:
+
+*Font-family: Gotham(not free),then Roboto
+	https://fonts.google.com/specimen/Roboto?query=roboto&preview.text_type=custom
+
+COLORS USED:
+-Green : #05af40, 
+	Used for logo/logo name, on click like(heart) and favourite;
+-Black: #000000,
+	Used for background;
+-White: #ffffff,
+	Used for text;
+-Grey: #919496,
+	Used for less important text, such as: 
+		-Followers
+		-Popularity
+		-Other album/ artist details
+-Grey2: #a1a1a1,
+	Used for background gradient( need to try, maybe we can use the other grey);
+
+
+
+*Background: linear-gradient(0deg, #a1a1a1 10%, #000000 90%); (need to try, else leave it black)
+
+*Color: #ffffff/#e8e8e8
+
+Link font awesome:
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+*Icons/ Font Awesome:
+	-Heart: <i class="far fa-heart"></i>
+	-X, (delete): <i class="far fa-times-circle"></i> //Delete favourites card
+	-Play: <i class="far fa-play-circle"></i>
+	-Pause: <i class="far fa-pause-circle"></i>
+	-x, delete tag: <i class="fas fa-times-circle"></i>
+	-Home: <i class="fas fa-home"></i>
+
+
+
+
+

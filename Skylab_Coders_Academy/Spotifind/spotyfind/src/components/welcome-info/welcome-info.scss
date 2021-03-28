@@ -1,0 +1,112 @@
+@import './../../assets/global-styles';
+
+.container-info__info{
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color: $white;
+  font-family: $text-font;
+}
+
+.container__video{
+  width: 100%;
+  top: -240px;
+  position: relative;
+  z-index: 1;
+  max-height: 700px;
+}
+
+video{
+  width: 100%;
+}
+
+video::-webkit-media-controls{
+  display: none;
+}
+
+video:focus{
+  outline: none;
+}
+
+.welcome__info{
+  position: absolute;
+  top:0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 100px;
+  margin-top: 100px
+}
+
+h1,
+h3,
+p{
+  font-family: $text-font;
+  font-weight: 700;
+}
+
+h1{
+border-bottom: 2px solid $white;
+font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.welcome__info__usage{
+  margin-top: 50px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+.fa-plus{
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.welcome__info__usage>p{
+  font-size: 20px;
+  margin-left: 20px;
+  font-family: $text-font;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media only screen and (max-width:600px){
+  .container-info__info{
+    // background-image: -webkit-gradient(linear, left top, left bottom, from(#212c39), color-stop(50%, #121e3d), to(#000));
+    background-image: url(./../../assets/app-info.png);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+.welcome__info{
+  margin: 0;
+  position:unset;
+  flex-wrap: wrap;
+  width: 90%;
+  z-index: 0;
+  }
+
+  .container__video{
+    display: none;
+  }
+
+  .welcome__info__usage{
+    width: 95%;
+    margin: 20px 0 0 0;
+  }
+
+  .welcome__info__usage>p{
+    font-size: 12px;
+    margin:0;
+  }
+}

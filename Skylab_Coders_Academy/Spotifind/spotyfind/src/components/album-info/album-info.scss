@@ -1,0 +1,102 @@
+@import './../../assets/global-styles';
+
+
+.detail__album-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    margin: 30px;
+    color: $white;
+}
+
+.album-info__album-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.album-info__album-cover>img {
+    box-shadow: 5px 5px 50px 5px $black;
+    margin: 20px;
+}
+
+.album-cover__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.album-cover__info-title{
+    font-size: 50px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.album-cover__info-date {
+    color: $grey;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.album-info__artist{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.artist__names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    padding-top: 5px;
+    margin: 2px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.artist__names:hover{
+    background-color: $boxGrey;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 80%;
+}
+
+.artist__names > button {
+    all: unset;
+    margin-right: 20px;
+}
+
+.artist__names > button:hover {
+    color: $greenSpoti;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.artist__names > i {
+    margin-left: 20px;
+}
+
+.artist__names > i:hover{
+    color: $greenSpoti;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.album-info__backbutton {
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+@import './../../assets/global-styles';
+
+.root__search-params {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    font-family: $text-font;
+    color: $grey;
+    // border-top: 1px solid $grey;
+}
+
+.search-params__queries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.search-params__queries > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tag__button{
+    all: unset;
+    border-radius: 15px;
+    padding: 0px 3px;
+    margin: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: $black;
+    border: 1px solid $grey;
+    text-align: center;
+}
+
+.tag__button:hover {
+    color: $white;
+    border: 1px solid $white;
+}
+
+button > i {
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+.search-params__button {
+    padding: 10px 0;;
+}
+
+.search-button{
+    text-decoration: none;
+    color: $grey;
+    padding: 5px 5px;
+    border: 0.5px solid $grey;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.search-button:hover{
+    text-decoration: none;
+    color: $white;
+    border: 0.5px solid $white;
+}

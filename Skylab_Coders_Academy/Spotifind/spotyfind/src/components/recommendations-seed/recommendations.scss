@@ -1,0 +1,116 @@
+@import './../../assets/global-styles';
+
+.recommendations__title{
+    padding-top: 100px;
+    border-bottom: 1px solid $grey;
+    color: $white;
+    margin-left: 50px;
+}
+
+.dashboard__recommendations{
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.recommendations__item{
+    width: 450px;
+    background-color: $darkGrey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    color: $white;
+}
+
+.recommendations__item:hover{
+    background-color: $boxGrey;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.item__buttom{
+    all:unset;
+    border:none;
+    background-color: $white;
+}
+
+.item__image{
+    cursor: pointer;
+    width:150px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        box-shadow: 5px 5px 25px 8px $black;
+    }
+}
+
+.item__album{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    
+}
+
+.album__artist-year{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.artists-list, .artist-year__year,.artist-year__artist{
+    margin: 5px;
+
+}
+
+li {
+    list-style: none;
+}
+
+.artist-year__year,
+.artists-list{
+    color: $grey;
+}
+
+.album__favourite{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 90%;
+}
+
+.album__favourite> button{
+    all: unset;
+}
+
+.album__favourite:hover{
+    color: $greenSpoti;
+}
+
+@media screen and (max-width: 600px){
+    .recommendations__title{
+        font-size: 35px;
+    }
+
+    .dashboard__recommendations{
+        width: 100%;
+    }
+
+    .recommendations__item{
+        width: 180px !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        flex-wrap: wrap;
+        margin: 2px !important;
+    }
+    .item__image{
+        width: 160px !important;
+    }
+
+}
