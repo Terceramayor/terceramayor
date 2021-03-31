@@ -1,0 +1,1402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the NavBar component When it is rendered as top rated Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#152B38",
+      "elevation": 24,
+      "flexDirection": "column",
+      "height": 150,
+      "justifyContent": "space-around",
+      "paddingTop": null,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 12,
+        "width": 0,
+      },
+      "shadowOpacity": 0.58,
+      "shadowRadius": 16,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="touchableOpacity"
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/hamburger.png",
+          }
+        }
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "25%",
+        }
+      }
+    >
+      <Text>
+        Not logged
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "width": "50%",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="search..."
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "color": "white",
+            "height": 35,
+            "marginRight": 15,
+            "paddingLeft": 5,
+            "paddingRight": 5,
+            "width": "75%",
+          }
+        }
+        testID="searchProductinput"
+        underlineColorAndroid="transparent"
+        value=""
+      />
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="searchProduct"
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/loupe.png",
+            }
+          }
+          style={
+            Object {
+              "height": 25,
+              "width": 25,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#616161",
+          "borderRadius": 4,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "space-around",
+          "opacity": 1,
+          "width": "40%",
+        }
+      }
+      testID="touchableOpacityReduxActionLoadDashboard"
+    >
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontFamily": "MontserratRegular",
+            "justifyContent": "center",
+          }
+        }
+      >
+        Last updated
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#616161",
+          "borderRadius": 4,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "space-around",
+          "opacity": 1,
+          "width": "40%",
+        }
+      }
+      testID="touchableOpacityReduxActionLoadDashboard"
+    >
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontFamily": "MontserratRegular",
+            "justifyContent": "center",
+          }
+        }
+      >
+        Top rated
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#23485D",
+          "height": 3,
+          "marginLeft": "5%",
+          "marginRight": "5%",
+          "width": "40%",
+        }
+      }
+    />
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "black",
+            "height": "100%",
+            "paddingTop": 5,
+            "width": "65%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#152B38",
+              "borderBottomColor": "#23485D",
+              "borderBottomWidth": 1,
+              "flexDirection": "row",
+              "height": 50,
+              "justifyContent": "space-between",
+              "paddingLeft": 20,
+              "width": "90%",
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#152B38",
+                "borderBottomColor": "#23485D",
+                "borderBottomWidth": 1,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "opacity": 1,
+                "paddingLeft": 20,
+                "width": "90%",
+              }
+            }
+            testID="touchableOpacityReduxActionLogSignIn"
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/logIn.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 30,
+                  "marginRight": 15,
+                  "width": 30,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontFamily": "MontserratRegular",
+                  "fontSize": 12,
+                  "marginRight": 30,
+                }
+              }
+            >
+              LogIn
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#152B38",
+              "flexDirection": "row",
+              "height": 50,
+              "justifyContent": "space-between",
+              "paddingLeft": 20,
+              "width": "90%",
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#152B38",
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "opacity": 1,
+                "paddingLeft": 20,
+                "width": "90%",
+              }
+            }
+            testID="touchableOpacity"
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/faq.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 30,
+                  "marginRight": 15,
+                  "width": 30,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontFamily": "MontserratRegular",
+                  "fontSize": 12,
+                  "marginRight": 34,
+                }
+              }
+            >
+              FAQ
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "height": "75%",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/logo.png",
+              }
+            }
+            style={
+              Object {
+                "height": 75,
+                "width": 75,
+              }
+            }
+          />
+          <Text
+            style={
+              Object {
+                "fontFamily": "MontserratMedium",
+                "fontSize": 25,
+              }
+            }
+          >
+            Obsoletes
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "MontserratLight",
+                "fontSize": 14,
+                "lineHeight": 20,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 20,
+                "textAlign": "center",
+              }
+            }
+          >
+            Welcome to Oboletes, the place to share your obsolescence experience. Though this App you can provide feedback regarding why your gadgets are not usable anymore so that other users can take better bying decisions.
+          </Text>
+        </View>
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(0,0,0,0.75)",
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0.75)",
+                  "height": "20%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+              testID="touchableOpacity"
+            />
+            <MockedComponent
+              hamburgerControls={[Function]}
+              logInSignInControls={[Function]}
+            />
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0.75)",
+                  "height": "20%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+              testID="touchableOpacity"
+            />
+          </View>
+        </Modal>
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="touchableOpacity"
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#152B38",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "paddingLeft": 25,
+                  "paddingRight": 25,
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/logo.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 75,
+                    "marginBottom": 65,
+                    "width": 75,
+                  }
+                }
+              />
+              <Text
+                style={
+                  Object {
+                    "borderTopColor": "#23485D",
+                    "borderTopWidth": 1,
+                    "fontFamily": "MontserratMedium",
+                    "fontSize": 20,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                    "paddingTop": 15,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                How can I use Obsoletes?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "fontFamily": "MontserratMedium",
+                    "lineHeight": 25,
+                    "paddingBottom": 5,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Your can state when you bought a new gadget. When it stops working, you can provide feedback about the reason why it died.
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "borderTopColor": "#23485D",
+                    "borderTopWidth": 1,
+                    "fontFamily": "MontserratMedium",
+                    "fontSize": 20,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                    "paddingTop": 15,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                What does the obsoletion score measure?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "fontFamily": "MontserratMedium",
+                    "lineHeight": 25,
+                    "paddingBottom": 5,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                The obsoletion score is an idex that measures how friendly a devide is in terms of obsolescence. The lower, the better.
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "borderTopColor": "#23485D",
+                    "borderTopWidth": 1,
+                    "fontFamily": "MontserratMedium",
+                    "fontSize": 20,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                    "paddingTop": 15,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                How is the obsoletion score calculated?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "fontFamily": "MontserratMedium",
+                    "lineHeight": 25,
+                    "paddingBottom": 5,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                The obsoletion score takes into acount the percentage of ex-users of a device vs. the current owners, the amount of death reasons and the average device durability.
+              </Text>
+            </View>
+          </View>
+        </Modal>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,0.75)",
+            "height": "100%",
+            "opacity": 1,
+            "width": "35%",
+          }
+        }
+        testID="touchableOpacity"
+      />
+    </View>
+  </Modal>
+</View>
+`;
+
+exports[`Given the NavBar component When it is rendered as top rated Then the SnapShot should match the rendered tree 2`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#152B38",
+      "elevation": 24,
+      "flexDirection": "column",
+      "height": 150,
+      "justifyContent": "space-around",
+      "paddingTop": null,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 12,
+        "width": 0,
+      },
+      "shadowOpacity": 0.58,
+      "shadowRadius": 16,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="touchableOpacity"
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/hamburger.png",
+          }
+        }
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "25%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+        testID="loadUserProfile"
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/logIn.png",
+            }
+          }
+          style={
+            Object {
+              "height": 30,
+              "marginRight": 5,
+              "width": 30,
+            }
+          }
+        />
+        <Text>
+          Fake_Name
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "width": "50%",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="search..."
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "color": "white",
+            "height": 35,
+            "marginRight": 15,
+            "paddingLeft": 5,
+            "paddingRight": 5,
+            "width": "75%",
+          }
+        }
+        testID="searchProductinput"
+        underlineColorAndroid="transparent"
+        value=""
+      />
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="searchProduct"
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/loupe.png",
+            }
+          }
+          style={
+            Object {
+              "height": 25,
+              "width": 25,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#616161",
+          "borderRadius": 4,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "space-around",
+          "opacity": 1,
+          "width": "40%",
+        }
+      }
+      testID="touchableOpacityReduxActionLoadDashboard"
+    >
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontFamily": "MontserratRegular",
+            "justifyContent": "center",
+          }
+        }
+      >
+        Last updated
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#616161",
+          "borderRadius": 4,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "space-around",
+          "opacity": 1,
+          "width": "40%",
+        }
+      }
+      testID="touchableOpacityReduxActionLoadDashboard"
+    >
+      <Text
+        style={
+          Object {
+            "alignItems": "center",
+            "fontFamily": "MontserratRegular",
+            "justifyContent": "center",
+          }
+        }
+      >
+        Top rated
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#23485D",
+          "height": 3,
+          "marginLeft": "5%",
+          "marginRight": "5%",
+          "width": "40%",
+        }
+      }
+    />
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "black",
+            "height": "100%",
+            "paddingTop": 5,
+            "width": "65%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#152B38",
+              "borderBottomColor": "#23485D",
+              "borderBottomWidth": 1,
+              "flexDirection": "row",
+              "height": 50,
+              "justifyContent": "space-between",
+              "paddingLeft": 20,
+              "width": "90%",
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#152B38",
+                "borderBottomColor": "#23485D",
+                "borderBottomWidth": 1,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "opacity": 1,
+                "paddingLeft": 20,
+                "width": "90%",
+              }
+            }
+            testID="touchableOpacityReduxActionLogSignIn"
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/logIn.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 30,
+                  "marginRight": 15,
+                  "width": 30,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontFamily": "MontserratRegular",
+                  "fontSize": 12,
+                  "marginRight": 30,
+                }
+              }
+            >
+              Logout & Login again
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#152B38",
+              "flexDirection": "row",
+              "height": 50,
+              "justifyContent": "space-between",
+              "paddingLeft": 20,
+              "width": "90%",
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#152B38",
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "opacity": 1,
+                "paddingLeft": 20,
+                "width": "90%",
+              }
+            }
+            testID="touchableOpacity"
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/faq.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 30,
+                  "marginRight": 15,
+                  "width": 30,
+                }
+              }
+            />
+            <Text
+              style={
+                Object {
+                  "fontFamily": "MontserratRegular",
+                  "fontSize": 12,
+                  "marginRight": 34,
+                }
+              }
+            >
+              FAQ
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "height": "75%",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/assets/images/logo.png",
+              }
+            }
+            style={
+              Object {
+                "height": 75,
+                "width": 75,
+              }
+            }
+          />
+          <Text
+            style={
+              Object {
+                "fontFamily": "MontserratMedium",
+                "fontSize": 25,
+              }
+            }
+          >
+            Obsoletes
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "MontserratLight",
+                "fontSize": 14,
+                "lineHeight": 20,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 20,
+                "textAlign": "center",
+              }
+            }
+          >
+            Welcome to Oboletes, the place to share your obsolescence experience. Though this App you can provide feedback regarding why your gadgets are not usable anymore so that other users can take better bying decisions.
+          </Text>
+        </View>
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(0,0,0,0.75)",
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0.75)",
+                  "height": "20%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+              testID="touchableOpacity"
+            />
+            <MockedComponent
+              hamburgerControls={[Function]}
+              logInSignInControls={[Function]}
+            />
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0.75)",
+                  "height": "20%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+              testID="touchableOpacity"
+            />
+          </View>
+        </Modal>
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="touchableOpacity"
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#152B38",
+                  "height": "100%",
+                  "justifyContent": "center",
+                  "paddingLeft": 25,
+                  "paddingRight": 25,
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/logo.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 75,
+                    "marginBottom": 65,
+                    "width": 75,
+                  }
+                }
+              />
+              <Text
+                style={
+                  Object {
+                    "borderTopColor": "#23485D",
+                    "borderTopWidth": 1,
+                    "fontFamily": "MontserratMedium",
+                    "fontSize": 20,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                    "paddingTop": 15,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                How can I use Obsoletes?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "fontFamily": "MontserratMedium",
+                    "lineHeight": 25,
+                    "paddingBottom": 5,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Your can state when you bought a new gadget. When it stops working, you can provide feedback about the reason why it died.
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "borderTopColor": "#23485D",
+                    "borderTopWidth": 1,
+                    "fontFamily": "MontserratMedium",
+                    "fontSize": 20,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                    "paddingTop": 15,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                What does the obsoletion score measure?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "fontFamily": "MontserratMedium",
+                    "lineHeight": 25,
+                    "paddingBottom": 5,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                The obsoletion score is an idex that measures how friendly a devide is in terms of obsolescence. The lower, the better.
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "borderTopColor": "#23485D",
+                    "borderTopWidth": 1,
+                    "fontFamily": "MontserratMedium",
+                    "fontSize": 20,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                    "paddingTop": 15,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
+              >
+                How is the obsoletion score calculated?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "fontFamily": "MontserratMedium",
+                    "lineHeight": 25,
+                    "paddingBottom": 5,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                The obsoletion score takes into acount the percentage of ex-users of a device vs. the current owners, the amount of death reasons and the average device durability.
+              </Text>
+            </View>
+          </View>
+        </Modal>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,0.75)",
+            "height": "100%",
+            "opacity": 1,
+            "width": "35%",
+          }
+        }
+        testID="touchableOpacity"
+      />
+    </View>
+  </Modal>
+</View>
+`;

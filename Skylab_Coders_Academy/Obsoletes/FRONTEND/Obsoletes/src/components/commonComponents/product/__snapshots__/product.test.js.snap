@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the Product component When it is rendered with a valid product object already at Obsoletes DB Then the SnapShot should match the rendered tree 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#152B38",
+        "borderRadius": 5,
+        "elevation": 8,
+        "flexDirection": "row",
+        "height": 150,
+        "justifyContent": "center",
+        "marginTop": 10,
+        "opacity": 1,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 4.65,
+        "width": "95%",
+      }
+    }
+    testID="touchableOpacityObsoletes"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://i.ibb.co/X3Kj5gb/i.png",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 4,
+          "height": 100,
+          "width": 100,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flexShrink": 1,
+          "height": "100%",
+          "justifyContent": "space-between",
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 5,
+          "paddingTop": 10,
+          "width": "50%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "MontserratLight",
+            "fontSize": 20,
+          }
+        }
+      >
+        MiXiao Lite sl 45
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "RobotoBold",
+                "fontSize": 15,
+              }
+            }
+          >
+            Owners 
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "RobotoBold",
+                "fontSize": 15,
+              }
+            }
+          >
+            1
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "RobotoBold",
+                "fontSize": 15,
+              }
+            }
+          >
+            Ex-owners
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "RobotoBold",
+                "fontSize": 15,
+              }
+            }
+          >
+            0
+          </Text>
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#23485D",
+            "fontFamily": "MontserratLight",
+            "fontSize": 15,
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
+      >
+        check stats
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "space-between",
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "width": "25%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 10,
+          }
+        }
+      >
+        2019-12-1
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "hsl(100,100%,75%)",
+              "fontFamily": "RobotoBold",
+              "fontSize": 40,
+              "paddingBottom": 5,
+            }
+          }
+        >
+          0.14
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "hsl(100,100%,75%)",
+              "fontFamily": "RobotoBold",
+              "fontSize": 12,
+            }
+          }
+        >
+          Obsoletion
+        </Text>
+      </View>
+    </View>
+  </View>,
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <MockedComponent
+      logedUserName=""
+      textToDisplay="Please login to check the stats or give feedback"
+    />
+  </Modal>,
+]
+`;
+
+exports[`Given the Product component When it is rendered with a valid product object not yet at Obsoletes DB Then the SnapShot should match the rendered tree 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#152B38",
+        "borderRadius": 5,
+        "elevation": 8,
+        "flexDirection": "row",
+        "height": 150,
+        "justifyContent": "center",
+        "marginTop": 10,
+        "opacity": 1,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 4.65,
+        "width": "95%",
+      }
+    }
+    testID="touchableOpacityMegaCo"
+  >
+    <Image
+      source={
+        Object {
+          "uri": undefined,
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 4,
+          "height": 100,
+          "width": 100,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexShrink": 1,
+          "height": "100%",
+          "justifyContent": "space-between",
+          "paddingBottom": "17%",
+          "paddingLeft": 10,
+          "paddingRight": 5,
+          "paddingTop": 10,
+          "width": "70%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "MontserratLight",
+            "fontSize": 20,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#FFC4C4",
+            "fontFamily": "RobotoBold",
+            "fontSize": 20,
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
+      >
+        Device not yet rated
+      </Text>
+    </View>
+  </View>,
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <MockedComponent
+      logedUserName=""
+      textToDisplay="Please login to check the stats or give feedback"
+    />
+  </Modal>,
+]
+`;

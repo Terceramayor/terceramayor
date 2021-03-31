@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the Profile component When it is rendered with an already rated products array for an specific user and the user which is logged in Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#23485D",
+      "flex": 1,
+    }
+  }
+>
+  <MockedNavBarComponent
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "backgroundColor": "#152B38",
+        "fontFamily": "MontserratRegular",
+        "fontSize": 17,
+        "paddingBottom": 10,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 10,
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+  >
+     Hello 
+    Fake_Name
+    , here you have all the products you have rated
+  </Text>
+  <RCTScrollView
+    style={
+      Object {
+        "width": "95%",
+      }
+    }
+  >
+    <View>
+      <ProductProfileComponent
+        navigation={
+          Object {
+            "navigate": [MockFunction],
+          }
+        }
+        singleProduct={
+          Object {
+            "__v": 0,
+            "_id": "6047b993a3106f69e02d67c7",
+            "brand": "SumSag",
+            "category": "smartPhone",
+            "obsoletion": 0.14,
+            "originId": "30493083045",
+            "productName": "MiXiao Lite xl 45",
+            "stats": Array [
+              Object {
+                "_id": "604762aed7d1028120f70fe4",
+                "broken": false,
+                "brokenDate": null,
+                "buyDate": "2017-01-04T00:00:00.000Z",
+                "reason": "",
+                "user": "Pablo",
+              },
+            ],
+            "thumbnailUrl": "https://i.ibb.co/X3Kj5gb/i.png",
+            "updatedDate": "2019-12-01T00:00:00.000Z",
+          }
+        }
+      />
+      <ProductProfileComponent
+        navigation={
+          Object {
+            "navigate": [MockFunction],
+          }
+        }
+        singleProduct={
+          Object {
+            "__v": 0,
+            "_id": "6047b993a3106294e02d67c7",
+            "brand": "SumSag",
+            "category": "smartPhone",
+            "obsoletion": 0.14,
+            "originId": "30493083045",
+            "productName": "MiXiao Lite sl 45",
+            "stats": Array [
+              Object {
+                "_id": "604762aed7d1028120f70fe4",
+                "broken": false,
+                "brokenDate": null,
+                "buyDate": "2017-01-04T00:00:00.000Z",
+                "reason": "",
+                "user": "Pablo",
+              },
+            ],
+            "thumbnailUrl": "https://i.ibb.co/X3Kj5gb/i.png",
+            "updatedDate": "2019-12-01T00:00:00.000Z",
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Given the Profile component When it is rendered with an already rated products empty array Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#23485D",
+      "flex": 1,
+    }
+  }
+>
+  <MockedNavBarComponent
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "backgroundColor": "#152B38",
+        "fontFamily": "MontserratRegular",
+        "fontSize": 17,
+        "paddingBottom": 10,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 10,
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+  >
+    You have not yet provided feedback of any product!
+  </Text>
+</View>
+`;
+
+exports[`Given the Profile component When it is rendered without any yet rated products with the user not being logged out Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#23485D",
+      "flex": 1,
+    }
+  }
+>
+  <MockedNavBarComponent
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "backgroundColor": "#152B38",
+        "fontFamily": "MontserratRegular",
+        "fontSize": 17,
+        "paddingBottom": 10,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 10,
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+  >
+    No user signed in!
+  </Text>
+</View>
+`;

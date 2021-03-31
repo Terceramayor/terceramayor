@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the Dashboard component When it is rendered with a valid product object and the user has not given feedback yet Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "height": "100%",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <MockedNavBarComponent />
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <View>
+      <MockedProductComponent
+        singleProduct={
+          Object {
+            "__v": 0,
+            "_id": "6047b993a3106f69e02d67c7",
+            "brand": "SumSag",
+            "category": "smartPhone",
+            "obsoletion": 0.14,
+            "originId": "30493083045",
+            "productName": "MiXiao Lite sl 45",
+            "stats": Array [
+              Object {
+                "_id": "604762aed7d1028120f70fe4",
+                "broken": false,
+                "brokenDate": null,
+                "buyDate": "2017-01-04T00:00:00.000Z",
+                "reason": "",
+                "user": "Pablo",
+              },
+            ],
+            "thumbnailUrl": "https://i.ibb.co/X3Kj5gb/i.png",
+            "updatedDate": "2019-12-01T00:00:00.000Z",
+          }
+        }
+      />
+      <MockedProductComponent
+        singleProduct={
+          Object {
+            "__v": 0,
+            "_id": "6047b993a3106294e02d67c7",
+            "brand": "SumSag",
+            "category": "smartPhone",
+            "obsoletion": 0.14,
+            "originId": "30493083045",
+            "productName": "MiXiao Lite sl 45",
+            "stats": Array [
+              Object {
+                "_id": "604762aed7d1028120f70fe4",
+                "broken": false,
+                "brokenDate": null,
+                "buyDate": "2017-01-04T00:00:00.000Z",
+                "reason": "",
+                "user": "Pablo",
+              },
+            ],
+            "thumbnailUrl": "https://i.ibb.co/X3Kj5gb/i.png",
+            "updatedDate": "2019-12-01T00:00:00.000Z",
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Given the Dashboard component When it is rendered with an empty product array object and the user has not given feedback yet Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "height": "100%",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <MockedNavBarComponent />
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratRegular",
+            "fontSize": 25,
+            "marginTop": 50,
+            "paddingBottom": 10,
+            "paddingTop": 10,
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
+      >
+        ...
+      </Text>
+    </View>
+  </RCTScrollView>
+</View>
+`;

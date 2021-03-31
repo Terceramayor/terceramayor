@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the NavBar component When it is rendered as top rated Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#23485D",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 100,
+        "marginBottom": 65,
+        "width": 100,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "white",
+        "fontFamily": "MontserratRegular",
+        "fontSize": 40,
+      }
+    }
+  >
+    Obsoletes
+  </Text>
+</View>
+`;

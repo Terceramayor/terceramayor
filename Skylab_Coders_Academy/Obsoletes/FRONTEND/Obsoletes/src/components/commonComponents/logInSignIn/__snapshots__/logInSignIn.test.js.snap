@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the LogInSignIn component When it is renderedthe for the first time Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#000000",
+      "borderColor": "#23485D",
+      "borderWidth": 2,
+      "flexDirection": "column",
+      "height": 500,
+      "justifyContent": "space-between",
+      "paddingBottom": 170,
+      "paddingTop": 170,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="User Name..."
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#616161",
+          "borderColor": "#152B38",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "color": "#FFFFFF",
+          "fontFamily": "MontserratLight",
+          "marginLeft": 30,
+          "marginRight": 30,
+          "paddingLeft": 5,
+          "paddingRight": 5,
+          "textAlign": "center",
+          "width": "35%",
+        }
+      }
+      testID="userNameInput"
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="Password..."
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#616161",
+          "borderColor": "#152B38",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "color": "#FFFFFF",
+          "fontFamily": "MontserratLight",
+          "marginLeft": 30,
+          "marginRight": 30,
+          "paddingLeft": 5,
+          "paddingRight": 5,
+          "textAlign": "center",
+          "width": "35%",
+        }
+      }
+      testID="passwordInput"
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+      }
+    }
+    testID="logInButton"
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/registerModal.png",
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "marginRight": 20,
+          "width": 30,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "backgroundColor": "#616161",
+          "borderColor": "#152B38",
+          "borderRadius": 4,
+          "fontFamily": "MontserratLight",
+          "height": 30,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+          "width": 100,
+        }
+      }
+    >
+      Sign In
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+      }
+    }
+    testID="logIn"
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/logInModal.png",
+        }
+      }
+      style={
+        Object {
+          "height": 30,
+          "marginRight": 20,
+          "width": 30,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "backgroundColor": "#616161",
+          "borderColor": "#152B38",
+          "borderRadius": 4,
+          "fontFamily": "MontserratLight",
+          "height": 30,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+          "width": 100,
+        }
+      }
+    >
+      Log In
+    </Text>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <MockedComponent
+      logedUserName=""
+      textToDisplay="Registration successful! - Please Login"
+    />
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <MockedComponent
+      logedUserName=""
+      textToDisplay="You are already registered!"
+    />
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <MockedComponent
+      logedUserName="Fake_Name"
+      textToDisplay="Welcome to Obsoletes "
+    />
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <MockedComponent
+      logedUserName=""
+      textToDisplay="Wrong user name and/or password!"
+    />
+  </Modal>
+</View>
+`;

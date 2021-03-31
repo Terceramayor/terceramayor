@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the FeedbackModalModel component When it is renderedthe for the first time Then the SnapShot should match the rendered tree 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,0.75)",
+        "height": "40%",
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#23485D",
+        "height": "20%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontFamily": "MontserratLight",
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    />
+  </View>,
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,0.75)",
+        "height": "40%",
+      }
+    }
+  />,
+]
+`;
