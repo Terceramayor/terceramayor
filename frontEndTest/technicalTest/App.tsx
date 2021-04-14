@@ -1,21 +1,48 @@
-import { StatusBar } from 'expo-status-bar';
+// eslint-disable-next-line no-use-before-define
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { useFonts } from 'expo-font';
+import AppLoading from 'expo-app-loading';
+import ShoppingCart from './src/routeComponents/ShoppingCart/ShoppingCart';
+import configureStore from './src/redux/store/configureStore';
+import colors from './src/assets/colors';
+import { navigationRoutes, fontNames } from './src/utils/noMagicStrings';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Stack = createStackNavigator();
 
 const styles = StyleSheet.create({
-  container: {
+  appBackground: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: colors.redBackground
+  }
 });
+
+export default function App() {
+  const [loaded] = useFonts({
+
+    [fontNames.MontserratLight]: require('./src/assets/fonts/Montserrat-Light.ttf'),
+    [fontNames.MontserratRegular]: require('./src/assets/fonts/Montserrat-Regular.ttf'),
+    [fontNames.MontserratMedium]: require('./src/assets/fonts/Montserrat-Medium.ttf')
+  });
+
+  if (!loaded) {
+    return <AppLoading />;
+  }
+
+  return (
+
+    <Provider store={configureStore()}>
+      <View style={styles.appBackground}>
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name={navigationRoutes.ShoppingCart} component={ShoppingCart} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </View>
+    </Provider>
+
+  );
+}
