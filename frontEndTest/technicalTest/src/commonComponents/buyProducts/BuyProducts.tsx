@@ -3,14 +3,14 @@ import React from 'react';
 import {
   View, Text, TouchableOpacity
 } from 'react-native';
-import Dispatch, { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import Item from '../../commonComponents/Item/Item';
 import { productCasuistic, navigationRoutes } from '../../utils/noMagicStrings';
+import { buyProductsStylesyProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
 
 import buyProductsStyles from './buyProductsStyles';
 
-function BuyProducts({ shoppingCart, navigation }) {
+function BuyProducts({ shoppingCart, navigation }:buyProductsStylesyProps) {
   const {
     buyContainer,
     backToCartText
@@ -46,7 +46,7 @@ function BuyProducts({ shoppingCart, navigation }) {
   );
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state:reduxStateInterface):mapStateToPropsReturnInterface => ({
   shoppingCart: state.shoppingCart
 });
 

@@ -6,10 +6,10 @@ import {
 import Dispatch, { connect } from 'react-redux';
 import Item from '../../commonComponents/Item/Item';
 import { productCasuistic, navigationRoutes } from '../../utils/noMagicStrings';
-
 import shoppingCartSummaryStyles from './shoppingCartSummaryStyles';
+import { ShoppingCartSummaryProps, reduxStateInterface, mapStateToPropsReturnInterface } from '../../utils/interfaces';
 
-function ShoppingCartSummary({ shoppingCart, navigation }) {
+function ShoppingCartSummary({ shoppingCart, navigation }:ShoppingCartSummaryProps) {
   const {
     shoppingCartContainer,
     cartSummaryContainer,
@@ -60,7 +60,8 @@ function ShoppingCartSummary({ shoppingCart, navigation }) {
   );
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state:reduxStateInterface)
+:mapStateToPropsReturnInterface => ({
   shoppingCart: state.shoppingCart
 });
 

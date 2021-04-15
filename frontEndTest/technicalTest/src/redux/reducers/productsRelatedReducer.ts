@@ -1,6 +1,10 @@
 import { actions } from '../../utils/noMagicStrings';
+import { Action, ActionProductsRelatedActions } from '../../utils/interfaces';
 
-export default function productsRelatedReducer(state = {}, action) {
+interface InitialState {}
+
+export default function productsRelatedReducer(state = {},
+  action:Action):InitialState | ActionProductsRelatedActions {
   switch (action.type) {
     case actions.loadShoppingcart:
 

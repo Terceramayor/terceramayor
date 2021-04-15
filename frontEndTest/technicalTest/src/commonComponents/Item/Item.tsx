@@ -8,10 +8,11 @@ import { bindActionCreators } from 'redux';
 import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
 import itemStyles from './itemStyles';
 import { operation, productCasuistic } from '../../utils/noMagicStrings';
+import { ItemProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
 
 export function Item({
   product, storeData, shoppingCart, actions, casuistic
-}) {
+}:ItemProps) {
   const {
     itemContainer,
     itemDataContainer,
@@ -122,7 +123,7 @@ export function Item({
   );
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state:reduxStateInterface):mapStateToPropsReturnInterface => ({
   shoppingCart: state.shoppingCart
 });
 

@@ -3,15 +3,15 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import oderSumarryCosts from '../../utils/oderSumarryCosts';
-
 import orderSummaryStyles from './orderSummaryStyles';
+import { OrderSummaryProps, reduxStateInterface, mapStateToPropsReturnInterface } from '../../utils/interfaces';
 
-function OrderSummary({ shoppingCart }) {
+function OrderSummary({ shoppingCart }:OrderSummaryProps) {
   const {
     orderSummaryContainer,
     orderSummaryTitle,
     SummaryContainer,
-    keyDataBlock,
+
     valueDataBlock,
     toPayContainer,
     toPay,
@@ -25,7 +25,7 @@ function OrderSummary({ shoppingCart }) {
     <View style={orderSummaryContainer}>
       <Text style={orderSummaryTitle}>Resumen del pedido</Text>
       <View style={SummaryContainer}>
-        <View style={keyDataBlock}>
+        <View>
           <Text style={summaryText}>Total de productos (IVA incluido)</Text>
           <Text style={summaryText}>Total de envío</Text>
           <Text style={summaryText}>Total sin IVA</Text>
@@ -48,7 +48,8 @@ function OrderSummary({ shoppingCart }) {
   );
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state:reduxStateInterface)
+:mapStateToPropsReturnInterface => ({
   shoppingCart: state.shoppingCart
 });
 

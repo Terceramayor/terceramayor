@@ -6,8 +6,9 @@ import { bindActionCreators } from 'redux';
 import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
 import BuyProducts from '../../commonComponents/buyProducts/BuyProducts';
 import Header from '../../commonComponents/header/Header';
+import { ContinueShoppingProps } from '../../utils/interfaces';
 
-export default function ContinueShopping({ navigation }) {
+export default function ContinueShopping({ navigation }:ContinueShoppingProps) {
   const styles = StyleSheet.create({
     backgroundImage: {
       flex: 1,

@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 import {
   View, Image, Text, TouchableOpacity, Modal, TextInput
 } from 'react-native';
-
 import headerStyles from './headerStyles';
 
 export default function Header() {
-  const [contactModal, setContactModal] = useState(false);
-  const [createAccount, setcreateAccount] = useState(false);
+  const [contactModal, setContactModal] = useState<boolean>(false);
+  const [createAccount, setcreateAccount] = useState<boolean>(false);
 
   const {
     logoFormat,
@@ -60,13 +59,14 @@ export default function Header() {
       >
         <TouchableOpacity
           testID="closeContactModalButton"
-
           onPress={() => {
             setContactModal(false);
           }}
         >
           <View style={contactContainer}>
-            <Text style={contactText}>De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00</Text>
+            <Text style={contactText}>
+              De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+            </Text>
             <Image source={require('../../assets/images/phone.png')} />
             <Text style={contactText}>+34 682 00 11 22</Text>
             <Image source={require('../../assets/images/email.png')} />

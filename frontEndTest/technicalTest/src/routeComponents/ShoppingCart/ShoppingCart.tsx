@@ -9,8 +9,9 @@ import { loadShoppingCart } from '../../redux/actions/productsRelatedActions';
 import ShoppingCartSummary from '../../commonComponents/shoppingCartSummary/ShoppingCartSummary';
 import OrderSummary from '../../commonComponents/orderSummary/OrderSummary';
 import Header from '../../commonComponents/header/Header';
+import { ShoppingCartProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
 
-function ShoppingCart({ shoppingCart, actions, navigation }) {
+function ShoppingCart({ shoppingCart, actions, navigation }:ShoppingCartProps) {
   useEffect(() => {
     actions.loadShoppingCart();
   }, []);
@@ -40,11 +41,11 @@ function ShoppingCart({ shoppingCart, actions, navigation }) {
     </ImageBackground>
   );
 }
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state:reduxStateInterface):mapStateToPropsReturnInterface => ({
   shoppingCart: state.shoppingCart
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch:Dispatch) => ({
   actions: bindActionCreators({ loadShoppingCart }, dispatch)
 });
 

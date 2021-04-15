@@ -1,6 +1,7 @@
-export default function oderSumarryCosts(currentShoppingCart) {
+import { ShoppingCart } from './interfaces';
+
+export default function oderSumarryCosts(currentShoppingCart:ShoppingCart) {
   let cost = 0;
-  console.log(currentShoppingCart);
   currentShoppingCart.data.stores.data.forEach((store) => {
     store.relationships.items.forEach((item) => {
       cost += parseFloat(item.attributes.current_unit_price) * item.attributes.quantity;
