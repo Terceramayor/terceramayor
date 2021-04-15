@@ -26,7 +26,7 @@ function ShoppingCart({ shoppingCart, actions, navigation }) {
   });
 
   return (
-    <ImageBackground style={styles.backgroundImage} source={require('../../assets/icons/bakcground.png')}>
+    <ImageBackground style={styles.backgroundImage} source={require('../../assets/images/bakcground.png')}>
 
       {shoppingCart?.data
     && (

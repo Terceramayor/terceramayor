@@ -1,18 +1,21 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect } from 'react';
-import {
-  View, ScrollView, Text, TouchableOpacity
-} from 'react-native';
+import { View, Text } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import loadShoppingCart from '../../redux/actions/productsRelatedActions';
 import oderSumarryCosts from '../../utils/oderSumarryCosts';
 
 import orderSummaryStyles from './orderSummaryStyles';
 
-function OrderSummary({ shoppingCart, actions }) {
+function OrderSummary({ shoppingCart }) {
   const {
-    orderSummaryContainer, orderSummaryTitle, SummaryContainer, keyDataBlock, valueDataBlock, toPayContainer, toPay, summaryText
+    orderSummaryContainer,
+    orderSummaryTitle,
+    SummaryContainer,
+    keyDataBlock,
+    valueDataBlock,
+    toPayContainer,
+    toPay,
+    summaryText
   } = orderSummaryStyles;
 
   const { total, gross, taxes } = oderSumarryCosts(shoppingCart);

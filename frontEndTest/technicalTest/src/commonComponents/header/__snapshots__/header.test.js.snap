@@ -1,0 +1,2227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given the Header component When it is rendered Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFECCC",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 5,
+      "padding": 10,
+      "paddingTop": 35,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 40,
+        "width": 130,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="ContactButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Contacto
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="CreateAccountButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={false}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="closeContactModalButton"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F2D0A4",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/phone.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          +34 682 00 11 22
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/email.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          hola@adios.com
+        </Text>
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="upperCloseCreateAccountModalButton"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F2D0A4",
+          "height": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "fontSize": 20,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          nombre*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Apellidos*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Correo electrónico*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Contraseña*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="lowerCloseCreateAccountModalButton"
+    />
+  </Modal>
+</View>
+`;
+
+exports[`Given the Header component When it is rendered When the contacto button is pressed Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFECCC",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 5,
+      "padding": 10,
+      "paddingTop": 35,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 40,
+        "width": 130,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="ContactButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Contacto
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="CreateAccountButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={false}
+    visible={true}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="closeContactModalButton"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F2D0A4",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/phone.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          +34 682 00 11 22
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/email.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          hola@adios.com
+        </Text>
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="upperCloseCreateAccountModalButton"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F2D0A4",
+          "height": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "fontSize": 20,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          nombre*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Apellidos*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Correo electrónico*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Contraseña*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="lowerCloseCreateAccountModalButton"
+    />
+  </Modal>
+</View>
+`;
+
+exports[`Given the Header component When the closeContactModalButton is pressed Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFECCC",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 5,
+      "padding": 10,
+      "paddingTop": 35,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 40,
+        "width": 130,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="ContactButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Contacto
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="CreateAccountButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={false}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="closeContactModalButton"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F2D0A4",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/phone.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          +34 682 00 11 22
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/email.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          hola@adios.com
+        </Text>
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="upperCloseCreateAccountModalButton"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F2D0A4",
+          "height": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "fontSize": 20,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          nombre*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Apellidos*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Correo electrónico*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Contraseña*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="lowerCloseCreateAccountModalButton"
+    />
+  </Modal>
+</View>
+`;
+
+exports[`Given the Header component When the createAccount button is pressed Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFECCC",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 5,
+      "padding": 10,
+      "paddingTop": 35,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 40,
+        "width": 130,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="ContactButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Contacto
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="CreateAccountButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={false}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="closeContactModalButton"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F2D0A4",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/phone.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          +34 682 00 11 22
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/email.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          hola@adios.com
+        </Text>
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={true}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="upperCloseCreateAccountModalButton"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F2D0A4",
+          "height": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "fontSize": 20,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          nombre*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Apellidos*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Correo electrónico*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Contraseña*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="lowerCloseCreateAccountModalButton"
+    />
+  </Modal>
+</View>
+`;
+
+exports[`Given the Header component When the lowerCloseCreateAccountModalButton is pressed Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFECCC",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 5,
+      "padding": 10,
+      "paddingTop": 35,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 40,
+        "width": 130,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="ContactButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Contacto
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="CreateAccountButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={false}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="closeContactModalButton"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F2D0A4",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/phone.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          +34 682 00 11 22
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/email.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          hola@adios.com
+        </Text>
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="upperCloseCreateAccountModalButton"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F2D0A4",
+          "height": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "fontSize": 20,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          nombre*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Apellidos*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Correo electrónico*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Contraseña*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="lowerCloseCreateAccountModalButton"
+    />
+  </Modal>
+</View>
+`;
+
+exports[`Given the Header component When the upperCloseCreateAccountModalButton is pressed Then the SnapShot should match the rendered tree 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFECCC",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginBottom": 5,
+      "padding": 10,
+      "paddingTop": 35,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 40,
+        "width": 130,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="ContactButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Contacto
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="CreateAccountButton"
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+    </View>
+  </View>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={false}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="closeContactModalButton"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F2D0A4",
+            "height": "100%",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/phone.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          +34 682 00 11 22
+        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/email.png",
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "marginBottom": 15,
+              "marginHorizontal": "10%",
+              "textAlign": "center",
+            }
+          }
+        >
+          hola@adios.com
+        </Text>
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="upperCloseCreateAccountModalButton"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F2D0A4",
+          "height": "50%",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "MontserratMedium",
+            "fontSize": 20,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Crea tu cuenta
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          nombre*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Apellidos*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Correo electrónico*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+            "width": "90%",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontFamily": "MontserratMedium",
+              "fontSize": 12,
+            }
+          }
+        >
+          Contraseña*
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "borderWidth": 1,
+              "fontSize": 12,
+              "paddingHorizontal": 5,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.75)",
+          "height": "25%",
+          "opacity": 1,
+        }
+      }
+      testID="lowerCloseCreateAccountModalButton"
+    />
+  </Modal>
+</View>
+`;

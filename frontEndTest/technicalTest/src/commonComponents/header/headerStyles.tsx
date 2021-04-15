@@ -22,7 +22,6 @@ const shoppingCartSummaryStyles = StyleSheet.create({
   logoFormat: {
     height: 40,
     width: 130
-
   },
   newAccountContainer: {
     backgroundColor: colors.redBackground,
@@ -64,7 +63,6 @@ const shoppingCartSummaryStyles = StyleSheet.create({
     fontFamily: fontNames.MontserratMedium,
     fontSize: 12
   }
-
 });
 
 export default shoppingCartSummaryStyles;

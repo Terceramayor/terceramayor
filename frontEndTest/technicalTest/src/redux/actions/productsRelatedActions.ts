@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { Dispatch } from 'react';
-import { ObsoleteProductInterface, actionObjectReturnLoadSearch } from '../../utils/interfaces';
-import { actions, petitionRoutes, operation } from '../../utils/noMagicStrings';
+import { actions, petitionRoutes } from '../../utils/noMagicStrings';
 import deleteAddproduct from '../../utils/deleteAddproduct';
 
 export default function loadShoppingCart():Function {

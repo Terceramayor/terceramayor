@@ -29,7 +29,6 @@ const itemStyles = StyleSheet.create({
     width: '65%',
     alignItems: 'center',
     paddingHorizontal: 10
-
   },
   itemQuantityPrice: {
     width: '100%',
@@ -39,7 +38,6 @@ const itemStyles = StyleSheet.create({
   currentStatusInfo: {
     marginTop: 15,
     justifyContent: 'space-between'
-
   },
   subtotalContainer: {
     flexDirection: 'row',

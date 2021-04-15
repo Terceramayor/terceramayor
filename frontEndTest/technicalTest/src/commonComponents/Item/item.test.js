@@ -2,200 +2,126 @@
 import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
-import Product from './Product';
-import { calculateOwnersExowners } from '../../../utils/calculateOwnersExowners';
-import { formatDate } from '../../../utils/formatDate';
-import { scoreToColor } from '../../../utils/scoreToColor';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import loadCase from '../../../utils/loadCase';
-import * as productStatsActions from '../../../redux/actions/actionsObsoletesProductStats';
-
-jest.mock('../../../utils/calculateOwnersExowners');
-jest.mock('../../../utils/formatDate');
-jest.mock('../../../utils/scoreToColor');
-jest.mock('./../../../REDUX/actions/actionsObsoletesProductStats');
-jest.mock('./../../commonComponents/feedbackModalModel/feedbackModalModel', () => 'MockedComponent');
-jest.useFakeTimers();
+import Item from './Item';
+import * as productActions from '../../redux/actions/productsRelatedActions';
+import { productCasuistic } from '../../utils/noMagicStrings';
 
 const mockStore = configureStore([thunk]);
 
-const mockedProductObsoletes = {
-  _id: '6047b993a3106f69e02d67c7',
-  originId: '30493083045',
-  productName: 'MiXiao Lite sl 45',
-  thumbnailUrl: 'https://i.ibb.co/X3Kj5gb/i.png',
-  brand: 'SumSag',
-  category: 'smartPhone',
-  place: 'obsoletes',
-  obsoletion: 0.14,
-  stats: [
-    {
-      _id: '604762aed7d1028120f70fe4',
-      buyDate: '2017-01-04T00:00:00.000Z',
-      broken: false,
-      brokenDate: null,
-      user: 'Pablo',
-      reason: ''
+const shoppingCartMockedData = {
+
+  data: {
+    type: 'cart',
+    id: 63174679,
+    stores: {
+      data: [
+        {
+          id: 350,
+          attributes: {
+            name: 'Vinos Baco'
+          },
+          relationships: {
+            items: [
+              {
+                type: 'items',
+                id: 434531,
+                attributes: {
+                  name: 'Ron Barceló Imperial',
+                  current_unit_price: '24.50',
+                  quantity: 3,
+                  image_url: 'https://media-verticommnetwork1.netdna-ssl.com/wines/ron-barcelo-imperial-434531-s350_d.jpg',
+                  brand: 'Ron Barceló'
+                }
+              },
+              {
+                id: 1653492,
+                attributes: {
+                  name: 'Naia',
+                  current_unit_price: '6.99',
+                  quantity: 2,
+                  image_url: 'https://media-verticommnetwork1.netdna-ssl.com/wines/naia-1653492-s350_d.jpg',
+                  brand: 'Bodegas Naia'
+
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
-  ],
-  __v: 0,
-  updatedDate: '2019-12-01T00:00:00.000Z'
+  }
+
+};
+const productMockedData = shoppingCartMockedData.data.stores.data[0].relationships.items[0];
+const storeDataMocked = {
+  storeId: 350,
+  storename: 'Vinos Baco'
 };
 
-const mockedProductMegaCo = {
-  _id: '6047b993a3106f69e02d67c7',
-  originId: '30493083045',
-  productName: 'MiXiao Lite sl 45',
-  thumbnailUrl: 'https://i.ibb.co/X3Kj5gb/i.png',
-  brand: 'SumSag',
-  category: 'smartPhone',
-  place: 'megaCo',
-  obsoletion: 0.14,
-  stats: [
-    {
-      _id: '604762aed7d1028120f70fe4',
-      buyDate: '2017-01-04T00:00:00.000Z',
-      broken: false,
-      brokenDate: null,
-      user: 'Pablo',
-      reason: ''
-    }
-  ],
-  __v: 0,
-  updatedDate: '2019-12-01T00:00:00.000Z'
-};
-
-describe('Given the Product component', () => {
+describe('Given the Item component', () => {
   beforeEach(() => {
-    jest.spyOn(productStatsActions, 'loadProduct').mockReturnValueOnce({ type: '' });
+    jest.spyOn(productActions, 'increaseDecreaseQuantity').mockReturnValueOnce({ type: '' });
   });
 
-  describe('When it is rendered with a valid product object already at Obsoletes DB', () => {
-    test('Then the SnapShot should match the rendered tree', () => {
-      calculateOwnersExowners.mockImplementationOnce(() => { return { owners: 1, exOwners: 0 }; });
-      scoreToColor.mockImplementationOnce(() => { return 100; });
-      formatDate.mockImplementationOnce(() => { return '2019-12-1'; });
+  describe('When it is rendered as part of the buy page', () => {
+    describe('When the add button is pressed', () => {
+      test('Then the action increaseDecreaseQuantity should be called', () => {
+        const store = mockStore({
+          shoppingCart: shoppingCartMockedData
+        });
+        const { getByTestId } = render(<Provider store={store}>
+          <Item
+            product={productMockedData}
+            storeData={storeDataMocked}
+            casuistic={productCasuistic.buy}
+          />
+        </Provider>);
 
-      const store = mockStore({
-        obsoletesProductsObject: { casuistic: loadCase.TOP_RATED },
-        userLogIn: {
-          logInStatus: true,
-          username: 'Fake_Name'
-        }
+        fireEvent.press(getByTestId('addToCarButton'));
+
+        expect(productActions.increaseDecreaseQuantity).toHaveBeenCalled();
       });
-      const tree = render(<Provider store={store}><Product singleProduct={mockedProductObsoletes}/></Provider>);
-
-      expect(tree).toMatchSnapshot();
     });
   });
 
-  describe('When it is rendered with a valid product object not yet at Obsoletes DB', () => {
-    test('Then the SnapShot should match the rendered tree', () => {
-      calculateOwnersExowners.mockImplementationOnce(() => { return { owners: 1, exOwners: 0 }; });
-      scoreToColor.mockImplementationOnce(() => { return 100; });
-      formatDate.mockImplementationOnce(() => { return '2019-12-1'; });
+  describe('When it is rendered as part of the buy shoppingCartSummary', () => {
+    describe('When the add button is pressed', () => {
+      test('Then the action increaseDecreaseQuantity should be called', () => {
+        const store = mockStore({
+          shoppingCart: shoppingCartMockedData
+        });
+        const { getByTestId } = render(<Provider store={store}>
+          <Item
+            product={productMockedData}
+            storeData={storeDataMocked}
+            casuistic={productCasuistic.shoppingCartSummary}
+          />
+        </Provider>);
 
-      const store = mockStore({
-        obsoletesProductsObject: { casuistic: loadCase.TOP_RATED },
-        userLogIn: {
-          logInStatus: true,
-          username: 'Fake_Name'
-        }
+        fireEvent.press(getByTestId('increaseButton'));
+
+        expect(productActions.increaseDecreaseQuantity).toHaveBeenCalled();
       });
-      const tree = render(<Provider store={store}><Product singleProduct={mockedProductMegaCo}/></Provider>);
-
-      expect(tree).toMatchSnapshot();
     });
-  });
+    describe('When the decrease button is pressed', () => {
+      test('Then the action increaseDecreaseQuantity should be called', () => {
+        const store = mockStore({
+          shoppingCart: shoppingCartMockedData
+        });
+        const { getByTestId } = render(<Provider store={store}>
+          <Item
+            product={productMockedData}
+            storeData={storeDataMocked}
+            casuistic={productCasuistic.shoppingCartSummary}
+          />
+        </Provider>);
 
-  describe('When the product is pressed and the user is already logged and the product is NOT yet at Obsoletes DB', () => {
-    test('Then the action loadProduct should be invoked ', () => {
-      calculateOwnersExowners.mockImplementationOnce(() => { return { owners: 1, exOwners: 0 }; });
-      scoreToColor.mockImplementationOnce(() => { return 100; });
-      formatDate.mockImplementationOnce(() => { return '2019-12-1'; });
-      const store = mockStore({
-        userLogIn: {
-          logInStatus: true,
-          username: 'Fake_Name'
-        }
+        fireEvent.press(getByTestId('decreaseButton'));
+
+        expect(productActions.increaseDecreaseQuantity).toHaveBeenCalled();
       });
-      const navigation = { navigate: jest.fn() };
-      const { getByTestId } = render(<Provider store={store}><Product singleProduct={mockedProductMegaCo} navigation = {navigation}/></Provider>);
-
-      act(() => {
-        fireEvent.press(getByTestId('touchableOpacityMegaCo'));
-        jest.runAllTimers();
-      });
-      expect(productStatsActions.loadProduct).toHaveBeenCalled();
-    });
-  });
-
-  describe('When the product is pressed and the user is not yet logged and the product is NOT yet at Obsoletes DB', () => {
-    test('Then the action loadProduct should be invoked ', () => {
-      calculateOwnersExowners.mockImplementationOnce(() => { return { owners: 1, exOwners: 0 }; });
-      scoreToColor.mockImplementationOnce(() => { return 100; });
-      formatDate.mockImplementationOnce(() => { return '2019-12-1'; });
-      const store = mockStore({
-        userLogIn: {
-          logInStatus: false,
-          username: 'Fake_Name'
-        }
-      });
-      const navigation = { navigate: jest.fn() };
-      const { getByTestId } = render(<Provider store={store}><Product singleProduct={mockedProductMegaCo} navigation = {navigation}/></Provider>);
-
-      act(() => {
-        fireEvent.press(getByTestId('touchableOpacityMegaCo'));
-        jest.runAllTimers();
-      });
-      expect(productStatsActions.loadProduct).toHaveBeenCalled();
-    });
-  });
-
-  describe('When the product is pressed and the user is already logged and the product is already at Obsoletes DB', () => {
-    test('Then the action loadProduct should be invoked ', () => {
-      calculateOwnersExowners.mockImplementationOnce(() => { return { owners: 1, exOwners: 0 }; });
-      scoreToColor.mockImplementationOnce(() => { return 100; });
-      formatDate.mockImplementationOnce(() => { return '2019-12-1'; });
-      const store = mockStore({
-        userLogIn: {
-          logInStatus: true,
-          username: 'Fake_Name'
-        }
-      });
-      const navigation = { navigate: jest.fn() };
-      const { getByTestId } = render(<Provider store={store}><Product singleProduct={mockedProductObsoletes} navigation = {navigation}/></Provider>);
-
-      act(() => {
-        fireEvent.press(getByTestId('touchableOpacityObsoletes'));
-        jest.runAllTimers();
-      });
-      expect(productStatsActions.loadProduct).toHaveBeenCalled();
-    });
-  });
-
-  describe('When the product is pressed and the user is not logged and the product is already at Obsoletes DB', () => {
-    test('Then the action loadProduct should be invoked ', () => {
-      calculateOwnersExowners.mockImplementation(() => { return { owners: 1, exOwners: 0 }; });
-      scoreToColor.mockImplementation(() => { return 100; });
-      formatDate.mockImplementation(() => { return '2019-12-1'; });
-
-      const store = mockStore({
-        userLogIn: {
-          logInStatus: false,
-          username: 'Fake_Name'
-        }
-      });
-      const navigation = { navigate: jest.fn() };
-      const { getByTestId } = render(<Provider store={store}><Product singleProduct={mockedProductObsoletes} navigation = {navigation}/></Provider>);
-
-      act(() => {
-        fireEvent.press(getByTestId('touchableOpacityObsoletes'));
-        jest.runAllTimers();
-      });
-
-      expect(productStatsActions.loadProduct).toHaveBeenCalled();
     });
   });
 });

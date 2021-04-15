@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  View, Image, Text, TouchableOpacity, StyleSheet, Modal
+  View, Image, Text, TouchableOpacity
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -31,7 +31,6 @@ export function Item({
     addToCartText
 
   } = itemStyles;
-
   const { attributes: itemInfo } = product;
 
   return (
@@ -53,7 +52,8 @@ export function Item({
             <View style={currentStatusInfo}>
 
               <Text style={priceCategories}>Precio Unidad:</Text>
-              {casuistic === productCasuistic.shoppingCartSummary && (<Text style={priceQuantity}>Cantidad:</Text>)}
+              {casuistic === productCasuistic.shoppingCartSummary
+              && (<Text style={priceQuantity}>Cantidad:</Text>)}
 
             </View>
 
@@ -64,32 +64,38 @@ export function Item({
               <View style={quantityControl}>
                 { (casuistic === productCasuistic.shoppingCartSummary) ? (
                   <>
-                    <TouchableOpacity onPress={() => {
-                      actions.increaseDecreaseQuantity(
-                        product.id, storeData.storeId, shoppingCart, operation.delete
-                      );
-                    }}
+                    <TouchableOpacity
+                      testID="decreaseButton"
+                      onPress={() => {
+                        actions.increaseDecreaseQuantity(
+                          product.id, storeData.storeId, shoppingCart, operation.delete
+                        );
+                      }}
                     >
-                      <Image source={require('../../assets/icons/menos.png')} style={imagesAddRemove} />
+                      <Image source={require('../../assets/images/menos.png')} style={imagesAddRemove} />
 
                     </TouchableOpacity>
                     <Text style={quantityText}>{itemInfo.quantity}</Text>
-                    <TouchableOpacity onPress={() => {
-                      actions.increaseDecreaseQuantity(
-                        product.id, storeData.storeId, shoppingCart, operation.add
-                      );
-                    }}
+                    <TouchableOpacity
+                      testID="increaseButton"
+                      onPress={() => {
+                        actions.increaseDecreaseQuantity(
+                          product.id, storeData.storeId, shoppingCart, operation.add
+                        );
+                      }}
                     >
-                      <Image source={require('../../assets/icons/mas.png')} style={imagesAddRemove} />
+                      <Image source={require('../../assets/images/mas.png')} style={imagesAddRemove} />
 
                     </TouchableOpacity>
                   </>
                 ) : (
-                  <TouchableOpacity onPress={() => {
-                    actions.increaseDecreaseQuantity(
-                      product.id, storeData.storeId, shoppingCart, operation.add
-                    );
-                  }}
+                  <TouchableOpacity
+                    testID="addToCarButton"
+                    onPress={() => {
+                      actions.increaseDecreaseQuantity(
+                        product.id, storeData.storeId, shoppingCart, operation.add
+                      );
+                    }}
                   >
                     <Text style={addToCartText}>Añadir a la cesta</Text>
                   </TouchableOpacity>

@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import {
   View, Image, Text, TouchableOpacity, Modal, TextInput
 } from 'react-native';
-import Dispatch, { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import loadShoppingCart from '../../redux/actions/productsRelatedActions';
 
 import headerStyles from './headerStyles';
 
@@ -32,18 +29,22 @@ export default function Header() {
 
     <View style={headerContainer}>
 
-      <Image source={require('../../assets/icons/logo.png')} style={logoFormat} />
+      <Image source={require('../../assets/images/logo.png')} style={logoFormat} />
 
       <View style={headerMenu}>
-        <TouchableOpacity onPress={() => {
-          setContactModal(true);
-        }}
+        <TouchableOpacity
+          testID="ContactButton"
+          onPress={() => {
+            setContactModal(true);
+          }}
         >
           <Text style={headerMenuItem}>Contacto</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => {
-          setcreateAccount(true);
-        }}
+        <TouchableOpacity
+          testID="CreateAccountButton"
+          onPress={() => {
+            setcreateAccount(true);
+          }}
         >
 
           <Text style={headerMenuItem}>Crea tu cuenta</Text>
@@ -57,15 +58,18 @@ export default function Header() {
         transparent={false}
         visible={contactModal}
       >
-        <TouchableOpacity onPress={() => {
-          setContactModal(false);
-        }}
+        <TouchableOpacity
+          testID="closeContactModalButton"
+
+          onPress={() => {
+            setContactModal(false);
+          }}
         >
           <View style={contactContainer}>
             <Text style={contactText}>De lunes a jueves de 9:30 a 18:30 y viernes de 9:30 a 18:00</Text>
-            <Image source={require('../../assets/icons/phone.png')} />
+            <Image source={require('../../assets/images/phone.png')} />
             <Text style={contactText}>+34 682 00 11 22</Text>
-            <Image source={require('../../assets/icons/email.png')} />
+            <Image source={require('../../assets/images/email.png')} />
             <Text style={contactText}>hola@adios.com</Text>
           </View>
         </TouchableOpacity>
@@ -80,6 +84,7 @@ export default function Header() {
         visible={createAccount}
       >
         <TouchableOpacity
+          testID="upperCloseCreateAccountModalButton"
           style={backToheader}
           onPress={() => {
             setcreateAccount(false);
@@ -109,6 +114,7 @@ export default function Header() {
 
         <TouchableOpacity
           style={backToheader}
+          testID="lowerCloseCreateAccountModalButton"
           onPress={() => {
             setcreateAccount(false);
           }}
