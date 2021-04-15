@@ -37,6 +37,12 @@ export interface mapStateToPropsReturnInterface{
         shoppingCart: ShoppingCart
       }
 
+export interface oderSumarryCostsReturn{
+  total:string,
+  gross:string,
+  taxes:string
+}
+
 // =================================ShoppingCart component interface=========================
 
 export interface ShoppingCartProps {

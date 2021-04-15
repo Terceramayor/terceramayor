@@ -1,6 +1,6 @@
-import { ShoppingCart } from './interfaces';
+import { ShoppingCart, oderSumarryCostsReturn } from './interfaces';
 
-export default function oderSumarryCosts(currentShoppingCart:ShoppingCart) {
+export default function oderSumarryCosts (currentShoppingCart:ShoppingCart):oderSumarryCostsReturn {
   let cost = 0;
   currentShoppingCart.data.stores.data.forEach((store) => {
     store.relationships.items.forEach((item) => {

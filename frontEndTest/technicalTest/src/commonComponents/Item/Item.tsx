@@ -3,14 +3,14 @@ import React from 'react';
 import {
   View, Image, Text, TouchableOpacity
 } from 'react-native';
-import Dispatch, { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
 import itemStyles from './itemStyles';
 import { operation, productCasuistic } from '../../utils/noMagicStrings';
 import { ItemProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
 
-export function Item({
+export function Item ({
   product, storeData, shoppingCart, actions, casuistic
 }:ItemProps) {
   const {
@@ -53,8 +53,8 @@ export function Item({
             <View style={currentStatusInfo}>
 
               <Text style={priceCategories}>Precio Unidad:</Text>
-              {casuistic === productCasuistic.shoppingCartSummary
-              && (<Text style={priceQuantity}>Cantidad:</Text>)}
+              {casuistic === productCasuistic.shoppingCartSummary &&
+              (<Text style={priceQuantity}>Cantidad:</Text>)}
 
             </View>
 
@@ -63,7 +63,8 @@ export function Item({
               <Text style={priceCategories}>{itemInfo.current_unit_price}</Text>
 
               <View style={quantityControl}>
-                { (casuistic === productCasuistic.shoppingCartSummary) ? (
+                { (casuistic === productCasuistic.shoppingCartSummary)
+                  ? (
                   <>
                     <TouchableOpacity
                       testID="decreaseButton"
@@ -89,7 +90,8 @@ export function Item({
 
                     </TouchableOpacity>
                   </>
-                ) : (
+                    )
+                  : (
                   <TouchableOpacity
                     testID="addToCarButton"
                     onPress={() => {
@@ -100,7 +102,7 @@ export function Item({
                   >
                     <Text style={addToCartText}>Añadir a la cesta</Text>
                   </TouchableOpacity>
-                )}
+                    )}
 
               </View>
             </View>
@@ -127,7 +129,7 @@ const mapStateToProps = (state:reduxStateInterface):mapStateToPropsReturnInterfa
   shoppingCart: state.shoppingCart
 });
 
-const mapDispatchToProps = (dispatch:Dispatch) => ({
+const mapDispatchToProps = (dispatch:any) => ({
   actions: bindActionCreators({ increaseDecreaseQuantity }, dispatch)
 });
 

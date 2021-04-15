@@ -4,7 +4,6 @@ export const navigationRoutes = {
 };
 
 export const fontNames = {
-
   MontserratLight: 'MontserratLight',
   MontserratRegular: 'MontserratRegular',
   MontserratMedium: 'MontserratMedium',
@@ -13,29 +12,21 @@ export const fontNames = {
 };
 
 export const actions = {
-
   loadShoppingcart: 'loadShoppingcart',
   increaseProduct: 'addProduct',
   decreaseProduct: 'deleteProduct'
-
 };
 
 export const petitionRoutes = {
-
   drinksAndCo: 'http://demo0915487.mockable.io/cart'
-
 };
 
 export const operation = {
-
   add: 'add',
   delete: 'delete'
-
 };
 
 export const productCasuistic = {
-
   shoppingCartSummary: 'shoppingCartSummary',
   buy: 'buy'
-
 };

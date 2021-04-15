@@ -41,7 +41,7 @@ const mapStateToProps = (state:reduxStateInterface):mapStateToPropsReturnInterfa
   shoppingCart: state.shoppingCart
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch:any) => ({
   actions: bindActionCreators({ loadShoppingCart }, dispatch)
 });
 

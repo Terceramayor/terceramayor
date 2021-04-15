@@ -3,7 +3,7 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers/rootReducer';
 
-function configureStore() {
+function configureStore () {
   return createStore(
     rootReducer,
 

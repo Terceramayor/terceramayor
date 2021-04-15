@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
 import { View, Text } from 'react-native';
-import Dispatch, { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import oderSumarryCosts from '../../utils/oderSumarryCosts';
 import orderSummaryStyles from './orderSummaryStyles';
 import { OrderSummaryProps, reduxStateInterface, mapStateToPropsReturnInterface } from '../../utils/interfaces';
 
-function OrderSummary({ shoppingCart }:OrderSummaryProps) {
+function OrderSummary ({ shoppingCart }:OrderSummaryProps) {
   const {
     orderSummaryContainer,
     orderSummaryTitle,

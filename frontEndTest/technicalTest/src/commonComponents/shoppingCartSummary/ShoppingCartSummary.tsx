@@ -3,13 +3,13 @@ import React from 'react';
 import {
   View, Image, Text, TouchableOpacity
 } from 'react-native';
-import Dispatch, { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import Item from '../../commonComponents/Item/Item';
 import { productCasuistic, navigationRoutes } from '../../utils/noMagicStrings';
 import shoppingCartSummaryStyles from './shoppingCartSummaryStyles';
 import { ShoppingCartSummaryProps, reduxStateInterface, mapStateToPropsReturnInterface } from '../../utils/interfaces';
 
-function ShoppingCartSummary({ shoppingCart, navigation }:ShoppingCartSummaryProps) {
+function ShoppingCartSummary ({ shoppingCart, navigation }:ShoppingCartSummaryProps) {
   const {
     shoppingCartContainer,
     cartSummaryContainer,
@@ -39,8 +39,8 @@ function ShoppingCartSummary({ shoppingCart, navigation }:ShoppingCartSummaryPro
 
           store.relationships.items.map((product) => (
 
-            product.attributes.quantity > 0
-            && (
+            product.attributes.quantity > 0 &&
+            (
             <Item
               key={product.id}
               product={product}
