@@ -6,11 +6,11 @@ import {
 import { connect } from 'react-redux';
 import Item from '../../commonComponents/Item/Item';
 import { productCasuistic, navigationRoutes } from '../../utils/noMagicStrings';
-import { buyProductsStylesyProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
+import { BuyProductsProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
 
 import buyProductsStyles from './buyProductsStyles';
 
-function BuyProducts({ shoppingCart, navigation }:buyProductsStylesyProps) {
+function BuyProducts ({ shoppingCart, navigation }:BuyProductsProps) {
   const {
     buyContainer,
     backToCartText
@@ -19,18 +19,14 @@ function BuyProducts({ shoppingCart, navigation }:buyProductsStylesyProps) {
     <View style={buyContainer}>
 
       {shoppingCart.data.stores.data.map((store) => (
-
         store.relationships.items.map((product) => (
-
           <Item
             key={product.id}
             product={product}
             storeData={{ storename: store.attributes.name, storeId: store.id }}
             casuistic={productCasuistic.buy}
           />
-
         ))
-
       ))}
 
       <TouchableOpacity

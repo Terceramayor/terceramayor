@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import {
   ImageBackground, StyleSheet
 } from 'react-native';
-import Dispatch, { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { loadShoppingCart } from '../../redux/actions/productsRelatedActions';
 import ShoppingCartSummary from '../../commonComponents/shoppingCartSummary/ShoppingCartSummary';
@@ -11,7 +11,7 @@ import OrderSummary from '../../commonComponents/orderSummary/OrderSummary';
 import Header from '../../commonComponents/header/Header';
 import { ShoppingCartProps, mapStateToPropsReturnInterface, reduxStateInterface } from '../../utils/interfaces';
 
-function ShoppingCart({ shoppingCart, actions, navigation }:ShoppingCartProps) {
+function ShoppingCart ({ shoppingCart, actions, navigation }:ShoppingCartProps) {
   useEffect(() => {
     actions.loadShoppingCart();
   }, []);
@@ -26,15 +26,11 @@ function ShoppingCart({ shoppingCart, actions, navigation }:ShoppingCartProps) {
 
   return (
     <ImageBackground style={styles.backgroundImage} source={require('../../assets/images/bakcground.png')}>
-
-      {shoppingCart?.data
-    && (
+      {shoppingCart?.data &&
+    (
     <>
-
       <Header />
-
       <ShoppingCartSummary navigation={navigation} />
-
       <OrderSummary />
     </>
     )}
@@ -45,7 +41,7 @@ const mapStateToProps = (state:reduxStateInterface):mapStateToPropsReturnInterfa
   shoppingCart: state.shoppingCart
 });
 
-const mapDispatchToProps = (dispatch:Dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
   actions: bindActionCreators({ loadShoppingCart }, dispatch)
 });
 

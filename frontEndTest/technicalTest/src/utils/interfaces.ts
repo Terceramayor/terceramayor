@@ -56,8 +56,8 @@ export interface ContinueShoppingProps {
 // ================================ShoppingCartSummary component interface=======================
 
 export interface ShoppingCartSummaryProps {
-    shoppingCart:ShoppingCart,
-    navigation: {navigate:Function}
+  navigation: {navigate:Function}
+  shoppingCart:ShoppingCart,
   }
 
 // ================================OrderSummary component interface=======================
@@ -83,7 +83,7 @@ export interface ItemProps {
 
 // ================================buyProductsStyles component interface=======================
 
-export interface buyProductsStylesyProps {
-    shoppingCart:ShoppingCart,
+export interface BuyProductsProps {
+    shoppingCart: ShoppingCart,
     navigation: {navigate:Function}
   }
