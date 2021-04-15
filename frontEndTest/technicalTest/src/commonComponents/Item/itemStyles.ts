@@ -22,6 +22,7 @@ const itemStyles = StyleSheet.create({
     width: 120
   },
   itemName: {
+    fontFamily: fontNames.MontserratMedium,
     fontSize: 17
   },
   itemCartDetails: {
@@ -36,10 +37,12 @@ const itemStyles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   currentStatusInfo: {
+    marginTop: 15,
     justifyContent: 'space-between'
 
   },
   subtotalContainer: {
+    flexDirection: 'row',
     alignItems: 'center'
   },
   imagesAddRemove: {
@@ -48,6 +51,7 @@ const itemStyles = StyleSheet.create({
   },
   quantityControl: {
     flexDirection: 'row',
+    width: '75%',
     alignItems: 'center'
   },
   quantityText: {
@@ -55,11 +59,28 @@ const itemStyles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10
   },
-  itemPrice: {
+  itemPriceStore: {
+    fontFamily: fontNames.MontserratLight,
     textAlign: 'center'
   },
+  priceCategories: {
+    fontFamily: fontNames.MontserratMedium,
+    textAlign: 'center'
+  },
+  priceQuantity: {
+    fontFamily: fontNames.MontserratMedium
+  },
   subtotalContent: {
+    marginTop: 20,
+    paddingHorizontal: 10,
+    fontFamily: fontNames.MontserratRegular,
     fontSize: 18
+  },
+  addToCartText: {
+    marginTop: 20,
+    fontSize: 16,
+    fontFamily: fontNames.MontserratMedium,
+    textAlign: 'center'
   }
 });
 

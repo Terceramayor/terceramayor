@@ -13,18 +13,23 @@ const shoppingCartSummaryStyles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center'
+
   },
   cartSummaryText: {
     textAlign: 'center',
-    width: '25%',
-
-    fontFamily: fontNames.MontserratRegular,
-    fontSize: 20
+    width: '35%',
+    fontFamily: fontNames.MontserratMedium,
+    fontSize: 18,
+    marginRight: 35
   },
   continueShoppingText: {
 
-    fontFamily: fontNames.MontserratLight,
+    fontFamily: fontNames.MontserratMedium,
     fontSize: 12
+  },
+  shoppingCartIcon: {
+    width: 30,
+    height: 30
   }
 
 });

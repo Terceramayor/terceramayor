@@ -7,7 +7,9 @@ export const fontNames = {
 
   MontserratLight: 'MontserratLight',
   MontserratRegular: 'MontserratRegular',
-  MontserratMedium: 'MontserratMedium'
+  MontserratMedium: 'MontserratMedium',
+  RobotoBold: 'RobotoBold',
+  RobotoRegular: 'RobotoRegular'
 };
 
 export const actions = {

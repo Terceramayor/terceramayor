@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useState } from 'react';
 import {
-  View, Image, Text, TouchableOpacity, Modal
+  View, Image, Text, TouchableOpacity, Modal, TextInput
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -19,7 +19,13 @@ export default function Header() {
     headerMenu,
     headerMenuItem,
     contactText,
-    contactContainer
+    contactContainer,
+    backToheader,
+    newAccountContainer,
+    newAccountTitle,
+    labelInputBlock,
+    newAccountInputField,
+    newAccountInputFieldText
   } = headerStyles;
 
   return (
@@ -35,13 +41,16 @@ export default function Header() {
         >
           <Text style={headerMenuItem}>Contacto</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          setcreateAccount(true);
+        }}
+        >
 
           <Text style={headerMenuItem}>Crea tu cuenta</Text>
         </TouchableOpacity>
       </View>
 
-      {/* =====================================Contact Modal==================== */}
+      {/* =====================================Contacto Modal==================== */}
 
       <Modal
         animationType="fade"
@@ -62,32 +71,50 @@ export default function Header() {
         </TouchableOpacity>
 
       </Modal>
+      {/* =====================================End of Contacto Modal==================== */}
       {/* =====================================Crea tu cuenta Modal==================== */}
 
-      {/* <Modal
+      <Modal
         animationType="fade"
-        transparent={false}
-        visible={contactModal}
+        transparent
+        visible={createAccount}
       >
-        <TouchableOpacity onPress={() => {
-          setContactModal(false);
-        }}
-        >
-          <View style={backToheader} />
-        </TouchableOpacity>
+        <TouchableOpacity
+          style={backToheader}
+          onPress={() => {
+            setcreateAccount(false);
+          }}
+        />
 
-        <View style={contactContainer}>
-          <Text>Contact modal</Text>
+        <View style={newAccountContainer}>
+          <Text style={newAccountTitle}>Crea tu cuenta</Text>
+
+          <View style={labelInputBlock}>
+            <Text style={newAccountInputFieldText}>nombre*</Text>
+            <TextInput style={newAccountInputField} />
+          </View>
+          <View style={labelInputBlock}>
+            <Text style={newAccountInputFieldText}>Apellidos*</Text>
+            <TextInput style={newAccountInputField} />
+          </View>
+          <View style={labelInputBlock}>
+            <Text style={newAccountInputFieldText}>Correo electrónico*</Text>
+            <TextInput style={newAccountInputField} />
+          </View>
+          <View style={labelInputBlock}>
+            <Text style={newAccountInputFieldText}>Contraseña*</Text>
+            <TextInput style={newAccountInputField} />
+          </View>
         </View>
 
-        <TouchableOpacity onPress={() => {
-          setContactModal(false);
-        }}
-        >
-          <View style={backToheader} />
-        </TouchableOpacity>
-      </Modal> */}
-
+        <TouchableOpacity
+          style={backToheader}
+          onPress={() => {
+            setcreateAccount(false);
+          }}
+        />
+      </Modal>
+      {/* =====================================End of Crea tu cuenta Modal==================== */}
     </View>
   );
 }

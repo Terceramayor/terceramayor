@@ -12,7 +12,7 @@ import orderSummaryStyles from './orderSummaryStyles';
 
 function OrderSummary({ shoppingCart, actions }) {
   const {
-    orderSummaryContainer, orderSummaryTitle, SummaryContainer, keyDataBlock, valueDataBlock, toPayContainer, toPay
+    orderSummaryContainer, orderSummaryTitle, SummaryContainer, keyDataBlock, valueDataBlock, toPayContainer, toPay, summaryText
   } = orderSummaryStyles;
 
   const { total, gross, taxes } = oderSumarryCosts(shoppingCart);
@@ -23,16 +23,16 @@ function OrderSummary({ shoppingCart, actions }) {
       <Text style={orderSummaryTitle}>Resumen del pedido</Text>
       <View style={SummaryContainer}>
         <View style={keyDataBlock}>
-          <Text>Total de productos (IVA incluido)</Text>
-          <Text>Total de envío</Text>
-          <Text>Total sin IVA</Text>
-          <Text>Total de impuestos</Text>
+          <Text style={summaryText}>Total de productos (IVA incluido)</Text>
+          <Text style={summaryText}>Total de envío</Text>
+          <Text style={summaryText}>Total sin IVA</Text>
+          <Text style={summaryText}> Total de impuestos</Text>
         </View>
         <View style={valueDataBlock}>
-          <Text>{`${total} €`}</Text>
-          <Text>Envío gratuito</Text>
-          <Text>{`${gross} €`}</Text>
-          <Text>{`${taxes} €`}</Text>
+          <Text style={summaryText}>{`${total} €`}</Text>
+          <Text style={summaryText}>Envío gratuito</Text>
+          <Text style={summaryText}>{`${gross} €`}</Text>
+          <Text style={summaryText}>{`${taxes} €`}</Text>
         </View>
       </View>
 

@@ -24,8 +24,11 @@ export function Item({
     imagesAddRemove,
     quantityControl,
     quantityText,
-    itemPrice,
-    subtotalContent
+    itemPriceStore,
+    subtotalContent,
+    priceCategories,
+    priceQuantity,
+    addToCartText
 
   } = itemStyles;
 
@@ -43,20 +46,20 @@ export function Item({
           <Text style={itemName}>
             {itemInfo.name}
           </Text>
-          <Text style={itemPrice}>{storeData.storename}</Text>
+          <Text style={itemPriceStore}>{storeData.storename}</Text>
 
           <View style={itemQuantityPrice}>
 
             <View style={currentStatusInfo}>
 
-              <Text>Precio Unidad:</Text>
-              {casuistic === productCasuistic.shoppingCartSummary && (<Text>Cantidad:</Text>)}
+              <Text style={priceCategories}>Precio Unidad:</Text>
+              {casuistic === productCasuistic.shoppingCartSummary && (<Text style={priceQuantity}>Cantidad:</Text>)}
 
             </View>
 
             <View style={currentStatusInfo}>
 
-              <Text style={itemPrice}>{itemInfo.current_unit_price}</Text>
+              <Text style={priceCategories}>{itemInfo.current_unit_price}</Text>
 
               <View style={quantityControl}>
                 { (casuistic === productCasuistic.shoppingCartSummary) ? (
@@ -88,7 +91,7 @@ export function Item({
                     );
                   }}
                   >
-                    <Text>Añadir a la cesta</Text>
+                    <Text style={addToCartText}>Añadir a la cesta</Text>
                   </TouchableOpacity>
                 )}
 

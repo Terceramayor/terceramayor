@@ -6,7 +6,8 @@ const shoppingCartSummaryStyles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 30,
+    paddingTop: 35,
+    marginBottom: 5,
     padding: 10,
     backgroundColor: colors.contentBackground
   },
@@ -15,12 +16,19 @@ const shoppingCartSummaryStyles = StyleSheet.create({
     alignItems: 'center'
   },
   headerMenuItem: {
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
+    fontFamily: fontNames.MontserratMedium
   },
   logoFormat: {
     height: 40,
     width: 130
 
+  },
+  newAccountContainer: {
+    backgroundColor: colors.redBackground,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '50%'
   },
   backToheader: {
     height: '25%',
@@ -35,7 +43,26 @@ const shoppingCartSummaryStyles = StyleSheet.create({
   contactText: {
     marginHorizontal: '10%',
     textAlign: 'center',
-    marginBottom: 15
+    marginBottom: 15,
+    fontFamily: fontNames.MontserratMedium
+  },
+  newAccountTitle: {
+    marginBottom: 25,
+    fontFamily: fontNames.MontserratMedium,
+    fontSize: 20
+  },
+  labelInputBlock: {
+    marginBottom: 10,
+    width: '90%'
+  },
+  newAccountInputField: {
+    borderWidth: 1,
+    paddingHorizontal: 5,
+    fontSize: 12
+  },
+  newAccountInputFieldText: {
+    fontFamily: fontNames.MontserratMedium,
+    fontSize: 12
   }
 
 });

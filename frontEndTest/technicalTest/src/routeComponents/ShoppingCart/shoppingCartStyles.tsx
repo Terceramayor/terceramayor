@@ -18,14 +18,13 @@ const shoppingCartStyles = StyleSheet.create({
   cartSummaryText: {
     textAlign: 'center',
     width: '25%',
-
     fontFamily: fontNames.MontserratRegular,
     fontSize: 20
   },
   continueShoppingText: {
 
     fontFamily: fontNames.MontserratLight,
-    fontSize: 12
+    fontSize: 222
   }
 
 });

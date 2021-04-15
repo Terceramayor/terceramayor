@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect } from 'react';
-import { View, ScrollView, Text } from 'react-native';
+import { View, ImageBackground, StyleSheet } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
@@ -11,12 +11,19 @@ import continueShoppingStyles from './continueShoppingStyles';
 import Header from '../../commonComponents/header/Header';
 
 function ContinueShopping({ navigation }) {
+  const styles = StyleSheet.create({
+    backgroundImage: {
+
+      flex: 1,
+      resizeMode: 'cover'
+    }
+  });
   return (
-    <>
+    <ImageBackground style={styles.backgroundImage} source={require('../../assets/icons/bakcground.png')}>
       <Header />
 
       <BuyProducts navigation={navigation} />
-    </>
+    </ImageBackground>
   );
 }
 

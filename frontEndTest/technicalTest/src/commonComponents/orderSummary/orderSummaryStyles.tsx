@@ -9,10 +9,12 @@ const shoppingCartSummaryStyles = StyleSheet.create({
     marginTop: 5,
     marginBottom: 5,
     paddingTop: 5,
-    paddingBottom: 5
+    paddingBottom: 15
   },
   orderSummaryTitle: {
-    fontSize: 18
+    fontFamily: fontNames.MontserratMedium,
+    fontSize: 20,
+    marginVertical: 15
   },
   SummaryContainer: {
     flexDirection: 'row',
@@ -29,7 +31,13 @@ const shoppingCartSummaryStyles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   toPay: {
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: fontNames.MontserratRegular
+
+  },
+  summaryText: {
+    fontFamily: fontNames.MontserratMedium,
+    fontSize: 14
   }
 
 });

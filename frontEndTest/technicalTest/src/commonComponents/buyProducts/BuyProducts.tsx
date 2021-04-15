@@ -40,7 +40,7 @@ function BuyProducts({ shoppingCart, actions, navigation }) {
           navigation.navigate(navigationRoutes.ShoppingCart);
         }}
       >
-        <Text style={backToCartText}>Back</Text>
+        <Text style={backToCartText}>Revisar Cesta</Text>
       </TouchableOpacity>
     </View>
 

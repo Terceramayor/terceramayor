@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect } from 'react';
 import {
-  View, ScrollView, Text, TouchableOpacity
+  View, Image, Text, TouchableOpacity
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -13,12 +13,13 @@ import shoppingCartSummaryStyles from './shoppingCartSummaryStyles';
 
 function ShoppingCartSummary({ shoppingCart, actions, navigation }) {
   const {
-    shoppingCartContainer, cartSummaryContainer, cartSummaryText, continueShoppingText
+    shoppingCartContainer, cartSummaryContainer, cartSummaryText, continueShoppingText, shoppingCartIcon
   } = shoppingCartSummaryStyles;
   return (
 
     <View style={shoppingCartContainer}>
       <View style={cartSummaryContainer}>
+        <Image source={require('../../assets/icons/shoppingCart.png')} style={shoppingCartIcon} />
         <Text style={cartSummaryText}>Resumen de tu cesta</Text>
         <TouchableOpacity onPress={() => {
           navigation.navigate(navigationRoutes.ContinueShopping);

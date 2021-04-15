@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect } from 'react';
 import {
-  View, ScrollView, Text, TouchableOpacity
+  View, ImageBackground, StyleSheet, TouchableOpacity
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -16,8 +16,17 @@ function ShoppingCart({ shoppingCart, actions, navigation }) {
   useEffect(() => {
     actions.loadShoppingCart();
   }, []);
+
+  const styles = StyleSheet.create({
+    backgroundImage: {
+
+      flex: 1,
+      resizeMode: 'cover'
+    }
+  });
+
   return (
-    <>
+    <ImageBackground style={styles.backgroundImage} source={require('../../assets/icons/bakcground.png')}>
 
       {shoppingCart?.data
     && (
@@ -30,7 +39,7 @@ function ShoppingCart({ shoppingCart, actions, navigation }) {
       <OrderSummary />
     </>
     )}
-    </>
+    </ImageBackground>
   );
 }
 const mapStateToProps = (state) => ({
