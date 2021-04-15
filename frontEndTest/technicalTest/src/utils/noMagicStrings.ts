@@ -15,7 +15,7 @@ export const fontNames = {
 export const actions = {
 
   loadShoppingcart: 'loadShoppingcart',
-  increaseProduct: 'deleteProduct',
+  increaseProduct: 'addProduct',
   decreaseProduct: 'deleteProduct'
 
 };
