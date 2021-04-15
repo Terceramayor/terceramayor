@@ -4,7 +4,8 @@ import { render, fireEvent, act } from '@testing-library/react-native';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import OrderSummary from './OrderSummary';
+import ShoppingCart from './ShoppingCart';
+import * as productActions from '../../redux/actions/productsRelatedActions';
 
 const mockStore = configureStore([thunk]);
 
@@ -53,18 +54,36 @@ const shoppingCartMockedData = {
 
 };
 
-describe('Given the OrderSummary component', () => {
-  describe('When it is rendered', () => {
-    test('Then the SnapShot should match the rendered tree', () => {
+jest.mock('./../../commonComponents/header/Header', () => 'MockedItemComponent');
+jest.mock('./../../commonComponents/shoppingCartSummary/ShoppingCartSummary', () => 'MockedShoppingCartSummary Component');
+jest.mock('./../../commonComponents/orderSummary/OrderSummary', () => 'MockedOrderSummaryComponent');
+
+describe('Given the ShoppingCart component', () => {
+  beforeEach(() => {
+    jest.spyOn(productActions, 'loadShoppingCart').mockReturnValueOnce({ type: '' });
+  });
+
+  describe('When it is rendered for the first time', () => {
+    test('Then the action loadShoppingCart should be called', () => {
       const store = mockStore({
         shoppingCart: shoppingCartMockedData
       });
+      render(<Provider store={store}>
+        <ShoppingCart />
+      </Provider>);
 
-      const tree = render(<Provider store={store}>
-        <OrderSummary />
-                          </Provider>);
-
-      expect(tree).toMatchSnapshot();
+      expect(productActions.loadShoppingCart).toHaveBeenCalled();
     });
+  });
+
+  test('Then the SnapShot should match the rendered tree', () => {
+    const store = mockStore({
+      shoppingCart: shoppingCartMockedData
+    });
+    const tree = render(<Provider store={store}>
+      <ShoppingCart />
+                        </Provider>);
+
+    expect(tree).toMatchSnapshot();
   });
 });

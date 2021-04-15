@@ -12,7 +12,7 @@ describe('Given the Header component', () => {
     });
   });
   describe('When it is rendered', () => {
-    describe('When the contacto button is pressed', () => {
+    describe('When the ContactButton is pressed', () => {
       test('Then the SnapShot should match the rendered tree', () => {
         const tree = render(<Header />);
         fireEvent.press(tree.getByTestId('ContactButton'));
@@ -21,7 +21,7 @@ describe('Given the Header component', () => {
       });
     });
   });
-  describe('When the createAccount button is pressed', () => {
+  describe('When the CreateAccountButton is pressed', () => {
     test('Then the SnapShot should match the rendered tree', () => {
       const tree = render(<Header />);
       fireEvent.press(tree.getByTestId('CreateAccountButton'));

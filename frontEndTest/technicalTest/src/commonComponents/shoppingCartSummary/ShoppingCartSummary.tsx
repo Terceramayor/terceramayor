@@ -23,9 +23,11 @@ function ShoppingCartSummary({ shoppingCart, navigation }) {
       <View style={cartSummaryContainer}>
         <Image source={require('../../assets/images/shoppingCart.png')} style={shoppingCartIcon} />
         <Text style={cartSummaryText}>Resumen de tu cesta</Text>
-        <TouchableOpacity onPress={() => {
-          navigation.navigate(navigationRoutes.ContinueShopping);
-        }}
+        <TouchableOpacity
+          testID="navogateToContinueShoppingButton"
+          onPress={() => {
+            navigation.navigate(navigationRoutes.ContinueShopping);
+          }}
         >
           <Text style={continueShoppingText}>Seguir comprando</Text>
         </TouchableOpacity>

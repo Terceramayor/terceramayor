@@ -1,17 +1,16 @@
 // eslint-disable-next-line no-use-before-define
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
-  View, ScrollView, Text, TouchableOpacity
+  View, Text, TouchableOpacity
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Item from '../../commonComponents/Item/Item';
-import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
 import { productCasuistic, navigationRoutes } from '../../utils/noMagicStrings';
 
 import buyProductsStyles from './buyProductsStyles';
 
-function BuyProducts({ shoppingCart, actions, navigation }) {
+function BuyProducts({ shoppingCart, navigation }) {
   const {
     buyContainer,
     backToCartText
@@ -35,7 +34,7 @@ function BuyProducts({ shoppingCart, actions, navigation }) {
       ))}
 
       <TouchableOpacity
-
+        testID="backToCartButton"
         onPress={() => {
           navigation.navigate(navigationRoutes.ShoppingCart);
         }}
@@ -51,8 +50,4 @@ const mapStateToProps = (state) => ({
   shoppingCart: state.shoppingCart
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators({ increaseDecreaseQuantity }, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(BuyProducts);
+export default connect(mapStateToProps, null)(BuyProducts);

@@ -3,10 +3,9 @@ import { Dispatch } from 'react';
 import { actions, petitionRoutes } from '../../utils/noMagicStrings';
 import deleteAddproduct from '../../utils/deleteAddproduct';
 
-export default function loadShoppingCart():Function {
+export function loadShoppingCart():Function {
   return async (dispatch: Dispatch<actionObjectReturnLoadSearch>):Promise<void> => {
     const { data } = await axios.get(petitionRoutes.drinksAndCo);
-
     const actionObject = {
       type: actions.loadShoppingcart,
       data

@@ -1,15 +1,13 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect } from 'react';
 import {
-  View, ImageBackground, StyleSheet, TouchableOpacity
+  ImageBackground, StyleSheet
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Item from '../../commonComponents/Item/Item';
-import loadShoppingCart from '../../redux/actions/productsRelatedActions';
+import { loadShoppingCart } from '../../redux/actions/productsRelatedActions';
 import ShoppingCartSummary from '../../commonComponents/shoppingCartSummary/ShoppingCartSummary';
 import OrderSummary from '../../commonComponents/orderSummary/OrderSummary';
-import shoppingCartStyles from './shoppingCartStyles';
 import Header from '../../commonComponents/header/Header';
 
 function ShoppingCart({ shoppingCart, actions, navigation }) {

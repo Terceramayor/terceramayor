@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-use-before-define
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import oderSumarryCosts from '../../utils/oderSumarryCosts';
