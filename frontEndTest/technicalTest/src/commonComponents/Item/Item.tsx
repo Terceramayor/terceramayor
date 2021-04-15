@@ -5,10 +5,13 @@ import {
 } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { deleteProduct } from '../../redux/actions/productsRelatedActions';
+import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
 import itemStyles from './itemStyles';
+import { operation, productCasuistic } from '../../utils/noMagicStrings';
 
-export function Product({ product, storeName, actions }) {
+export function Item({
+  product, storeData, shoppingCart, actions, casuistic
+}) {
   const {
     itemContainer,
     itemDataContainer,
@@ -17,7 +20,12 @@ export function Product({ product, storeName, actions }) {
     itemName,
     currentStatusInfo,
     subtotalContainer,
-    itemQuantityPrice
+    itemQuantityPrice,
+    imagesAddRemove,
+    quantityControl,
+    quantityText,
+    itemPrice,
+    subtotalContent
 
   } = itemStyles;
 
@@ -35,30 +43,67 @@ export function Product({ product, storeName, actions }) {
           <Text style={itemName}>
             {itemInfo.name}
           </Text>
+          <Text style={itemPrice}>{storeData.storename}</Text>
 
           <View style={itemQuantityPrice}>
 
             <View style={currentStatusInfo}>
 
               <Text>Precio Unidad:</Text>
-              <Text>Cantidad:</Text>
+              {casuistic === productCasuistic.shoppingCartSummary && (<Text>Cantidad:</Text>)}
 
             </View>
 
             <View style={currentStatusInfo}>
 
-              <Text>23,4</Text>
-              <Text>3</Text>
+              <Text style={itemPrice}>{itemInfo.current_unit_price}</Text>
 
+              <View style={quantityControl}>
+                { (casuistic === productCasuistic.shoppingCartSummary) ? (
+                  <>
+                    <TouchableOpacity onPress={() => {
+                      actions.increaseDecreaseQuantity(
+                        product.id, storeData.storeId, shoppingCart, operation.delete
+                      );
+                    }}
+                    >
+                      <Image source={require('../../assets/icons/menos.png')} style={imagesAddRemove} />
+
+                    </TouchableOpacity>
+                    <Text style={quantityText}>{itemInfo.quantity}</Text>
+                    <TouchableOpacity onPress={() => {
+                      actions.increaseDecreaseQuantity(
+                        product.id, storeData.storeId, shoppingCart, operation.add
+                      );
+                    }}
+                    >
+                      <Image source={require('../../assets/icons/mas.png')} style={imagesAddRemove} />
+
+                    </TouchableOpacity>
+                  </>
+                ) : (
+                  <TouchableOpacity onPress={() => {
+                    actions.increaseDecreaseQuantity(
+                      product.id, storeData.storeId, shoppingCart, operation.add
+                    );
+                  }}
+                  >
+                    <Text>Añadir a la cesta</Text>
+                  </TouchableOpacity>
+                )}
+
+              </View>
             </View>
 
-            <View style={subtotalContainer}>
-
-              <Text>Subtotal</Text>
-              <Text>234,43 Eur</Text>
-
-            </View>
           </View>
+          {casuistic === productCasuistic.shoppingCartSummary && (
+          <View style={subtotalContainer}>
+
+            <Text style={subtotalContent}>Subtotal</Text>
+            <Text style={subtotalContent}>{`${itemInfo.current_unit_price * itemInfo.quantity} Euros`}</Text>
+
+          </View>
+          )}
         </View>
 
       </View>
@@ -68,8 +113,12 @@ export function Product({ product, storeName, actions }) {
   );
 }
 
-const mapDispatchToProps = (dispatch:Dispatch) => ({
-  actions: bindActionCreators({ deleteProduct }, dispatch)
+const mapStateToProps = (state) => ({
+  shoppingCart: state.shoppingCart
 });
 
-export default connect(null, mapDispatchToProps)(Product);
+const mapDispatchToProps = (dispatch:Dispatch) => ({
+  actions: bindActionCreators({ increaseDecreaseQuantity }, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Item);

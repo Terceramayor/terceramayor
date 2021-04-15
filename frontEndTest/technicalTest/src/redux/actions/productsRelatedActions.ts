@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { Dispatch } from 'react';
 import { ObsoleteProductInterface, actionObjectReturnLoadSearch } from '../../utils/interfaces';
-import { actions, petitionRoutes } from '../../utils/noMagicStrings';
+import { actions, petitionRoutes, operation } from '../../utils/noMagicStrings';
+import deleteAddproduct from '../../utils/deleteAddproduct';
 
 export default function loadShoppingCart():Function {
   return async (dispatch: Dispatch<actionObjectReturnLoadSearch>):Promise<void> => {
@@ -15,11 +16,21 @@ export default function loadShoppingCart():Function {
   };
 }
 
-export function deleteProduct(productToBeDeleted) {
+export function increaseDecreaseQuantity(productId, storeId, currentShoppingCart, operation) {
+  let updatedProductsArray = [];
+  let storeIndex;
+  const shoppingCartUpdated = JSON.parse(JSON.stringify(currentShoppingCart));
+  shoppingCartUpdated.data.stores.data.forEach((store, index) => {
+    if (store.id === storeId) {
+      updatedProductsArray = deleteAddproduct(store.relationships.items, productId, operation);
+      storeIndex = index;
+    }
+  });
+  shoppingCartUpdated.data.stores.data[storeIndex].relationships.items = updatedProductsArray;
   const actionObject = {
 
-    type: actions.deleteProduct,
-    data: productToBeDeleted
+    type: actions.decreaseProduct,
+    data: shoppingCartUpdated
 
   };
   return actionObject;

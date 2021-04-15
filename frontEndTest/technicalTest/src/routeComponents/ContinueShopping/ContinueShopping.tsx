@@ -3,51 +3,25 @@ import React, { useEffect } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { loadDashboard } from '../../../redux/actions/actionsObsoletesProductsObject';
-import NavBar from '../../commonComponents/navBar/NavBar';
-import Product from '../../commonComponents/product/Product';
-import loadCase from '../../../utils/loadCase';
-import { reduxStateInterface, DashboardPropsInterface, mapStateToPropsDashboardReturnInterface } from '../../../utils/interfaces';
-import dashBoardStyles from './dashboardStyles';
+import { increaseDecreaseQuantity } from '../../redux/actions/productsRelatedActions';
+import { productCasuistic } from '../../utils/noMagicStrings';
+import Item from '../../commonComponents/Item/Item';
+import BuyProducts from '../../commonComponents/buyProducts/BuyProducts';
+import continueShoppingStyles from './continueShoppingStyles';
+import Header from '../../commonComponents/header/Header';
 
-function ShoppingCart({ obsoletesProductsObject, actions, navigation }: DashboardPropsInterface) {
-  useEffect(() => {
-    actions.loadShoppingCart(loadCase.LAST_UPDATED);
-  }, []);
-  const { productsArray } = obsoletesProductsObject;
-
-  const { dashboardContainer, products, helloUserProfile } = dashBoardStyles;
+function ContinueShopping({ navigation }) {
   return (
+    <>
+      <Header />
 
-    <View style={dashboardContainer}>
-
-      <NavBar navigation={navigation} />
-      <ScrollView contentContainerStyle={products}>
-
-        {(productsArray?.length === 0)
-          ? (
-            <Text style={helloUserProfile}>...</Text>
-          )
-          : (
-            productsArray && productsArray.map((singleProduct) => (
-
-              <Product singleProduct={singleProduct} navigation={navigation} key={singleProduct._id} />
-
-            ))
-          )}
-
-      </ScrollView>
-    </View>
-
+      <BuyProducts navigation={navigation} />
+    </>
   );
 }
 
-const mapStateToProps = (state:reduxStateInterface):mapStateToPropsDashboardReturnInterface => ({
-  obsoletesProductsObject: state.obsoletesProductsObject
+const mapDispatchToProps = (dispatch) => ({
+  actions: bindActionCreators({ increaseDecreaseQuantity }, dispatch)
 });
 
-const mapDispatchToProps = (dispatch: Dispatch) => ({
-  actions: bindActionCreators({ loadDashboard }, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(null, mapDispatchToProps)(ContinueShopping);

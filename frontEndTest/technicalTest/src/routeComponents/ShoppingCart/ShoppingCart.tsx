@@ -7,47 +7,32 @@ import Dispatch, { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Item from '../../commonComponents/Item/Item';
 import loadShoppingCart from '../../redux/actions/productsRelatedActions';
-
+import ShoppingCartSummary from '../../commonComponents/shoppingCartSummary/ShoppingCartSummary';
+import OrderSummary from '../../commonComponents/orderSummary/OrderSummary';
 import shoppingCartStyles from './shoppingCartStyles';
+import Header from '../../commonComponents/header/Header';
 
 function ShoppingCart({ shoppingCart, actions, navigation }) {
   useEffect(() => {
     actions.loadShoppingCart();
   }, []);
-
-  const {
-    shoppingCartContainer, cartSummaryContainer, cartSummaryText, continueShoppingText
-  } = shoppingCartStyles;
-
   return (
+    <>
 
-    <View style={shoppingCartContainer}>
-      <View style={cartSummaryContainer}>
-        <Text style={cartSummaryText}>Resumen de tu cesta</Text>
-        <TouchableOpacity>
-          <Text style={continueShoppingText}>Seguir comprando</Text>
-        </TouchableOpacity>
-      </View>
+      {shoppingCart?.data
+    && (
+    <>
 
-      <View>
+      <Header />
 
-        {shoppingCart?.data && shoppingCart.data.stores.data.map((store) => (
+      <ShoppingCartSummary navigation={navigation} />
 
-          store.relationships.items.map((product) => (
-
-            <Item key={product.id} product={product} storeName={store.attributes.name} />
-
-          ))
-
-        ))}
-
-      </View>
-
-    </View>
-
+      <OrderSummary />
+    </>
+    )}
+    </>
   );
 }
-
 const mapStateToProps = (state) => ({
   shoppingCart: state.shoppingCart
 });

@@ -15,17 +15,19 @@ const itemStyles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginLeft: '5%',
-    marginRight: '5%'
+    marginHorizontal: '2%'
   },
   itemImage: {
-    height: 100,
-    width: 100
+    height: 120,
+    width: 120
+  },
+  itemName: {
+    fontSize: 17
   },
   itemCartDetails: {
-    backgroundColor: colors.redBackground,
     width: '65%',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingHorizontal: 10
 
   },
   itemQuantityPrice: {
@@ -34,12 +36,30 @@ const itemStyles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   currentStatusInfo: {
-    backgroundColor: colors.contentBackground
+    justifyContent: 'space-between'
 
   },
   subtotalContainer: {
-    backgroundColor: colors.contentBackground
-
+    alignItems: 'center'
+  },
+  imagesAddRemove: {
+    height: 15,
+    width: 15
+  },
+  quantityControl: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  quantityText: {
+    fontSize: 20,
+    marginLeft: 10,
+    marginRight: 10
+  },
+  itemPrice: {
+    textAlign: 'center'
+  },
+  subtotalContent: {
+    fontSize: 18
   }
 });
 
