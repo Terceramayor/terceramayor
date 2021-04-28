@@ -1,6 +1,0 @@
-export default {
-
-  LOAD_CV_DATA: 'LOAD_CV_DATA',
-  LOAD_PORTFOLIO: 'LOAD_PORTFOLIO'
-
-};
