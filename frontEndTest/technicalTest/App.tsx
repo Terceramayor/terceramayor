@@ -1,8 +1,6 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
-import {
-  StyleSheet, View, Text, ImageBackground
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import { Provider } from 'react-redux';
@@ -11,21 +9,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import ShoppingCart from './src/routeComponents/ShoppingCart/ShoppingCart';
 import ContinueShopping from './src/routeComponents/ContinueShopping/ContinueShopping';
 import configureStore from './src/redux/store/configureStore';
-import colors from './src/assets/colors';
 import { navigationRoutes, fontNames } from './src/utils/noMagicStrings';
 
 const Stack = createStackNavigator();
 
-const styles = StyleSheet.create({
-  appBackground: {
-
-    flex: 1,
-    resizeMode: 'cover',
-    justifyContent: 'center',
-    backgroundColor: 'transparent'
-  }
-});
-export default function App() {
+export default function App () {
   const [loaded] = useFonts({
 
     [fontNames.MontserratLight]: require('./src/assets/fonts/Montserrat-Light.ttf'),

@@ -6,7 +6,7 @@ import {
   ShoppingCart, Store, Item, ActionProductsRelatedActions
 } from '../../utils/interfaces';
 
-export function loadShoppingCart():Function {
+export function loadShoppingCart ():Function {
   return async (dispatch: Dispatch<ActionProductsRelatedActions>):Promise<void> => {
     const { data } = await axios.get(petitionRoutes.drinksAndCo);
     const actionObject = {
@@ -17,7 +17,7 @@ export function loadShoppingCart():Function {
   };
 }
 
-export function increaseDecreaseQuantity(
+export function increaseDecreaseQuantity (
   productId:number,
   storeId:number,
   currentShoppingCart:ShoppingCart,

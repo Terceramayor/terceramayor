@@ -3,6 +3,7 @@ import React from 'react';
 import { ImageBackground, StyleSheet } from 'react-native';
 import BuyProducts from '../../commonComponents/buyProducts/BuyProducts';
 import Header from '../../commonComponents/header/Header';
+import { ContinueShoppingProps } from './../../utils/interfaces';
 
 export default function ContinueShopping ({ navigation }:ContinueShoppingProps) {
   const styles = StyleSheet.create({

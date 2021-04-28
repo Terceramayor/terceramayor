@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import headerStyles from './headerStyles';
 
-export default function Header() {
+export default function Header () {
   const [contactModal, setContactModal] = useState<boolean>(false);
   const [createAccount, setcreateAccount] = useState<boolean>(false);
 
