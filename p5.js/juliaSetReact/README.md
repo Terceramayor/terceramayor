@@ -1,4 +1,4 @@
-- Nice artwork using the Julia set.
+Nice artwork using the Julia set.
     Stack:
         - React.js
         - p5.js

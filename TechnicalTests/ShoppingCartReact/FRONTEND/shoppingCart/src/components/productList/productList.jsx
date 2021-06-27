@@ -2,7 +2,8 @@
 import React, { useEffect } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import ProductListItem from '../productItem/productListItem';
+// eslint-disable-next-line import/no-unresolved
+import ProductListItem from '../productItem/ProductListItem';
 import loadAvailableItems from '../../REDUX/actions/actions';
 import './productList.scss';
 

@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import addToCartIcon from '../../assets/addToCart.png';
 import { addItemToShoppingCart, decreaseItemStock } from '../../REDUX/actions/actions';
 
-function ProductlistItem({ product, actions }) {
+function ProductListItem({ product, actions }) {
   return (
     <div className="product-item">
       <div className="product-name-price__container">
@@ -58,4 +58,4 @@ const mapDispatchToProps = (dispatch) => ({
 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProductlistItem);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductListItem);
